@@ -1,4 +1,5 @@
 :root {
+  /* PUBLIC01C6_NEUTRAL_SURFACE_POLISH_V1 */
   color-scheme: light dark;
 
   /*
@@ -17,22 +18,22 @@
   --subshell-cream: #fff8f4;
 
   --md-sys-color-surface: #fff8f4;
-  --md-sys-color-surface-container-low: #fcf0ea;
-  --md-sys-color-surface-container: #f8e7de;
-  --md-sys-color-surface-container-high: #f4ded4;
+  --md-sys-color-surface-container-low: #f7f2ee;
+  --md-sys-color-surface-container: #f0ebe7;
+  --md-sys-color-surface-container-high: #e8e2de;
 
   --md-sys-color-on-surface: #211a17;
-  --md-sys-color-on-surface-variant: #53443d;
-  --md-sys-color-outline: #85736b;
-  --md-sys-color-outline-variant: #d8c2b8;
+  --md-sys-color-on-surface-variant: #514a46;
+  --md-sys-color-outline: #857b75;
+  --md-sys-color-outline-variant: #d3cbc6;
 
   --md-sys-color-primary: #914300;
   --md-sys-color-on-primary: #ffffff;
   --md-sys-color-primary-container: #ffdbc8;
   --md-sys-color-on-primary-container: #301400;
 
-  --md-sys-color-secondary-container: #ffdbcb;
-  --md-sys-color-on-secondary-container: #2b160d;
+  --md-sys-color-secondary-container: #ebe4df;
+  --md-sys-color-on-secondary-container: #2b2521;
 
   --shell: 1180px;
 
@@ -129,8 +130,8 @@ a {
 }
 
 .brand-logo {
-  width: 42px;
-  height: 42px;
+  width: 46px;
+  height: 46px;
 
   display: block;
 
@@ -484,6 +485,15 @@ a {
   font-size: 16px;
 }
 
+.beta-content .button-filled {
+  background: var(--md-sys-color-secondary-container);
+  color: var(--md-sys-color-on-secondary-container);
+}
+
+.beta-content .button-filled:hover {
+  outline: 1px solid var(--md-sys-color-outline-variant);
+}
+
 .beta-meta {
   margin-top: 28px;
 
@@ -562,22 +572,22 @@ a:focus-visible,
 @media (prefers-color-scheme: dark) {
   :root {
     --md-sys-color-surface: #17120f;
-    --md-sys-color-surface-container-low: #211a16;
-    --md-sys-color-surface-container: #2c231e;
-    --md-sys-color-surface-container-high: #50443f;
+    --md-sys-color-surface-container-low: #201c1a;
+    --md-sys-color-surface-container: #282422;
+    --md-sys-color-surface-container-high: #312d2b;
 
     --md-sys-color-on-surface: #f2dfd7;
-    --md-sys-color-on-surface-variant: #d6c3ba;
-    --md-sys-color-outline: #9e8e86;
-    --md-sys-color-outline-variant: #50443f;
+    --md-sys-color-on-surface-variant: #cec5c0;
+    --md-sys-color-outline: #9b918c;
+    --md-sys-color-outline-variant: #4b4643;
 
     --md-sys-color-primary: #ff8a3d;
     --md-sys-color-on-primary: #542000;
     --md-sys-color-primary-container: #733008;
     --md-sys-color-on-primary-container: #ffdbc9;
 
-    --md-sys-color-secondary-container: #5a4035;
-    --md-sys-color-on-secondary-container: #ffdbcb;
+    --md-sys-color-secondary-container: #37312e;
+    --md-sys-color-on-secondary-container: #ebe2dc;
   }
 
   .app-preview {
@@ -618,8 +628,8 @@ a:focus-visible,
   }
 
   .brand-logo {
-    width: 37px;
-    height: 37px;
+    width: 40px;
+    height: 40px;
 
     border-radius: 12px;
   }
