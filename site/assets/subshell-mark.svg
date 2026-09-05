@@ -1,0 +1,18 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 88 88"
+  role="img"
+  aria-label="subshell">
+  <path
+    fill="#171411"
+    d="M8 0H80Q88 0 88 8V80Q88 88 80 88H8Q0 88 0 80V8Q0 0 8 0Z"/>
+  <path
+    fill="#FF8A3D"
+    d="M29 17C18 24 13 33 13 44C13 55 18 64 29 71L33 64C25 58 22 51 22 44C22 37 25 30 33 24Z"/>
+  <path
+    fill="#FF8A3D"
+    d="M59 17L55 24C63 30 66 37 66 44C66 51 63 58 55 64L59 71C70 64 75 55 75 44C75 33 70 24 59 17Z"/>
+  <path
+    fill="#FFE0CC"
+    d="M33 53H55V59H33Z"/>
+</svg>

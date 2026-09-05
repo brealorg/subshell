@@ -5,23 +5,34 @@
    * Material 3-inspired baseline palette.
    * The hierarchy comes from tonal containment rather than decoration.
    */
-  --md-sys-color-surface: #fffbfe;
-  --md-sys-color-surface-container-low: #f7f2fa;
-  --md-sys-color-surface-container: #f3edf7;
-  --md-sys-color-surface-container-high: #ece6f0;
+  /*
+   * Subshell canonical warm palette.
+   * Brand source: Android Color.kt + ic_subshell_in_app.xml.
+   */
+  --subshell-orange: #ff8a3d;
+  --subshell-orange-soft: #ffb68c;
+  --subshell-ink: #17120f;
+  --subshell-surface: #211a16;
+  --subshell-surface-high: #2c231e;
+  --subshell-cream: #fff8f4;
 
-  --md-sys-color-on-surface: #1d1b20;
-  --md-sys-color-on-surface-variant: #49454f;
-  --md-sys-color-outline: #79747e;
-  --md-sys-color-outline-variant: #cac4d0;
+  --md-sys-color-surface: #fff8f4;
+  --md-sys-color-surface-container-low: #fcf0ea;
+  --md-sys-color-surface-container: #f8e7de;
+  --md-sys-color-surface-container-high: #f4ded4;
 
-  --md-sys-color-primary: #6750a4;
+  --md-sys-color-on-surface: #211a17;
+  --md-sys-color-on-surface-variant: #53443d;
+  --md-sys-color-outline: #85736b;
+  --md-sys-color-outline-variant: #d8c2b8;
+
+  --md-sys-color-primary: #914300;
   --md-sys-color-on-primary: #ffffff;
-  --md-sys-color-primary-container: #eaddff;
-  --md-sys-color-on-primary-container: #21005d;
+  --md-sys-color-primary-container: #ffdbc8;
+  --md-sys-color-on-primary-container: #301400;
 
-  --md-sys-color-secondary-container: #e8def8;
-  --md-sys-color-on-secondary-container: #1d192b;
+  --md-sys-color-secondary-container: #ffdbcb;
+  --md-sys-color-on-secondary-container: #2b160d;
 
   --shell: 1180px;
 
@@ -117,43 +128,13 @@ a {
   letter-spacing: -0.025em;
 }
 
-.brand-symbol {
+.brand-logo {
   width: 42px;
   height: 42px;
 
-  padding: 10px;
-
-  border-radius: 14px;
-
-  display: grid;
-  align-content: center;
-  gap: 4px;
-
-  background: var(--md-sys-color-primary-container);
-}
-
-.brand-symbol span {
-  height: 3px;
-
   display: block;
 
-  border-radius: var(--shape-full);
-
-  background: var(--md-sys-color-on-primary-container);
-}
-
-.brand-symbol span:nth-child(1) {
-  width: 21px;
-}
-
-.brand-symbol span:nth-child(2) {
-  width: 15px;
-  margin-left: 4px;
-}
-
-.brand-symbol span:nth-child(3) {
-  width: 9px;
-  margin-left: 8px;
+  border-radius: 14px;
 }
 
 .nav {
@@ -343,7 +324,7 @@ a {
   align-items: center;
   justify-content: space-between;
 
-  border-bottom: 2px solid #b69cff;
+  border-bottom: 2px solid #ffb68c;
 
   font-size: 13px;
 }
@@ -368,7 +349,7 @@ a {
 
   border-radius: 50%;
 
-  background: #6f8cff;
+  background: #ff8a3d;
 }
 
 .post-author i.green {
@@ -436,7 +417,7 @@ a {
 }
 
 .app-nav strong {
-  color: #cbb9ff;
+  color: #ffb68c;
 }
 
 .beta-section {
@@ -580,23 +561,23 @@ a:focus-visible,
 /* Native dark theme. Dark Reader is explicitly locked out in HTML. */
 @media (prefers-color-scheme: dark) {
   :root {
-    --md-sys-color-surface: #141218;
-    --md-sys-color-surface-container-low: #1d1b20;
-    --md-sys-color-surface-container: #211f26;
-    --md-sys-color-surface-container-high: #2b2930;
+    --md-sys-color-surface: #17120f;
+    --md-sys-color-surface-container-low: #211a16;
+    --md-sys-color-surface-container: #2c231e;
+    --md-sys-color-surface-container-high: #50443f;
 
-    --md-sys-color-on-surface: #e6e0e9;
-    --md-sys-color-on-surface-variant: #cac4d0;
-    --md-sys-color-outline: #938f99;
-    --md-sys-color-outline-variant: #49454f;
+    --md-sys-color-on-surface: #f2dfd7;
+    --md-sys-color-on-surface-variant: #d6c3ba;
+    --md-sys-color-outline: #9e8e86;
+    --md-sys-color-outline-variant: #50443f;
 
-    --md-sys-color-primary: #d0bcff;
-    --md-sys-color-on-primary: #381e72;
-    --md-sys-color-primary-container: #4f378b;
-    --md-sys-color-on-primary-container: #eaddff;
+    --md-sys-color-primary: #ff8a3d;
+    --md-sys-color-on-primary: #542000;
+    --md-sys-color-primary-container: #733008;
+    --md-sys-color-on-primary-container: #ffdbc9;
 
-    --md-sys-color-secondary-container: #4a4458;
-    --md-sys-color-on-secondary-container: #e8def8;
+    --md-sys-color-secondary-container: #5a4035;
+    --md-sys-color-on-secondary-container: #ffdbcb;
   }
 
   .app-preview {
@@ -636,7 +617,7 @@ a:focus-visible,
     font-size: 21px;
   }
 
-  .brand-symbol {
+  .brand-logo {
     width: 37px;
     height: 37px;
 
