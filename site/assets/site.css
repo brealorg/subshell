@@ -1604,3 +1604,349 @@ body.gallery-dialog-open {
     border-radius: 14px;
   }
 }
+
+
+/* PUBLIC01C9_MOBILE_COMPOSITION_V1 */
+
+@media (max-width: 640px) {
+
+  /*
+   * Header:
+   * retain product identity + GitHub + meaningful dynamic-colour control.
+   * Support remains available in the footer.
+   */
+  .site-header {
+    padding-block: 7px;
+  }
+
+  .header-inner {
+    min-height: 48px;
+    gap: 10px;
+  }
+
+  .brand {
+    gap: 9px;
+    flex: 0 1 auto;
+    min-width: 0;
+  }
+
+  .brand-logo {
+    width: 36px;
+    height: 36px;
+
+    border-radius: 11px;
+  }
+
+  .brand strong {
+    font-size: 19px;
+  }
+
+  .nav {
+    margin-left: auto;
+
+    gap: 10px;
+
+    font-size: 12px;
+  }
+
+  /* Beta already disappears at this breakpoint. */
+  .nav a:nth-child(2) {
+    display: none;
+  }
+
+  .nav a:nth-child(3) {
+    font-size: 12px;
+  }
+
+  .palette-toggle {
+    min-height: 36px;
+    padding-inline: 7px;
+
+    gap: 6px;
+  }
+
+  /*
+   * Keep the palette glyph visible.
+   * A naked switch was visually ambiguous on mobile.
+   */
+  .palette-toggle-icon {
+    width: 16px;
+    height: 16px;
+
+    display: block;
+  }
+
+  .palette-toggle-track {
+    width: 32px;
+    height: 20px;
+  }
+
+  .palette-toggle-thumb {
+    width: 14px;
+    height: 14px;
+  }
+
+  .palette-toggle[aria-pressed="true"]
+  .palette-toggle-thumb {
+    transform: translateX(12px);
+  }
+
+
+  /*
+   * Hero:
+   * mobile composition instead of a desktop grid collapsed to one column.
+   */
+  .hero-section {
+    padding: 4px 0 16px;
+  }
+
+  .hero-surface {
+    display: block;
+
+    min-height: 0;
+
+    padding: 24px 18px 18px;
+
+    border-radius:
+      30px
+      30px
+      30px
+      11px;
+  }
+
+  .eyebrow {
+    margin-bottom: 13px;
+
+    font-size: 10px;
+    letter-spacing: 0.14em;
+  }
+
+  .hero-copy h1 {
+    font-size: 56px;
+    line-height: 0.95;
+    letter-spacing: -0.055em;
+  }
+
+  .hero-title {
+    margin: 10px 0 19px;
+
+    font-size: 31px;
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+  }
+
+  .hero-description {
+    margin-bottom: 21px;
+
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    gap: 9px;
+  }
+
+  .hero-actions .button {
+    min-height: 44px;
+    padding-inline: 17px;
+
+    font-size: 14px;
+  }
+
+
+  /*
+   * Gallery:
+   * move it immediately into the hero flow and reduce nesting.
+   */
+  .preview-container {
+    width: 100%;
+    margin: 26px 0 0;
+    padding: 10px;
+
+    border-radius:
+      11px
+      26px
+      26px
+      26px;
+  }
+
+  .gallery-header {
+    margin-bottom: 9px;
+    padding-inline: 3px;
+  }
+
+  .gallery-header strong {
+    font-size: 12px;
+  }
+
+  .gallery-icon-button {
+    width: 32px;
+    height: 32px;
+  }
+
+  .gallery-icon-button svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .gallery-slide {
+    flex-basis: 90%;
+  }
+
+  /*
+   * The screenshot itself provides the screen identity.
+   * Hiding captions also prevents the next peek from showing "Co...".
+   */
+  .gallery-slide figcaption {
+    display: none;
+  }
+
+  .gallery-shot-image {
+    min-height: 390px;
+  }
+
+  .gallery-shot-image img {
+    height: 390px;
+
+    border-radius: 23px;
+  }
+
+  .gallery-open {
+    border-radius: 23px;
+  }
+
+  .gallery-dots {
+    padding-top: 9px;
+  }
+
+
+  /*
+   * Beta:
+   * same Material surface, substantially less poster-scale.
+   */
+  .beta-section {
+    padding: 0 0 15px;
+  }
+
+  .beta-surface {
+    padding: 23px 19px;
+
+    border-radius:
+      25px
+      25px
+      9px
+      25px;
+  }
+
+  .beta-status {
+    margin-bottom: 11px;
+
+    font-size: 10px;
+  }
+
+  .status-dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .beta-content {
+    gap: 17px;
+  }
+
+  .beta-content h2 {
+    margin-bottom: 7px;
+
+    font-size: 26px;
+    line-height: 1.1;
+  }
+
+  .beta-content p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .beta-content .button {
+    min-height: 44px;
+    padding-inline: 18px;
+
+    font-size: 14px;
+  }
+
+  .beta-meta {
+    margin-top: 19px;
+
+    gap: 7px;
+  }
+
+  .beta-meta span {
+    padding: 6px 10px;
+
+    font-size: 11px;
+  }
+
+
+  /*
+   * Footer:
+   * keep everything available, but reduce the final vertical footprint.
+   */
+  .site-footer {
+    padding: 8px 0 28px;
+  }
+
+  .footer-inner {
+    padding: 15px 8px 0;
+
+    gap: 22px;
+  }
+
+  .footer-copy strong {
+    font-size: 18px;
+  }
+
+  .footer-copy p {
+    font-size: 11px;
+  }
+
+  .footer-links {
+    gap: 12px 18px;
+
+    font-size: 11px;
+  }
+}
+
+
+@media (max-width: 380px) {
+  .shell {
+    width: calc(100% - 22px);
+  }
+
+  .hero-surface {
+    padding-inline: 16px;
+  }
+
+  .hero-copy h1 {
+    font-size: 52px;
+  }
+
+  .hero-title {
+    font-size: 29px;
+  }
+
+  .hero-actions .button {
+    padding-inline: 14px;
+  }
+
+  .gallery-shot-image {
+    min-height: 365px;
+  }
+
+  .gallery-shot-image img {
+    height: 365px;
+  }
+}
