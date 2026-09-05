@@ -30,6 +30,49 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # PUBLIC01C11_DEPLOY_TIME_ASSET_CACHE_BUST_V1
+      - name: Version static assets
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import os
+
+          path = Path("site/index.html")
+          text = path.read_text(encoding="utf-8")
+          revision = os.environ["GITHUB_SHA"][:12]
+
+          replacements = (
+              (
+                  'href="/subshell/assets/site.css"',
+                  f'href="/subshell/assets/site.css?v={revision}"',
+              ),
+              (
+                  'src="/subshell/assets/site.js"',
+                  f'src="/subshell/assets/site.js?v={revision}"',
+              ),
+          )
+
+          for old, new in replacements:
+              count = text.count(old)
+
+              if count != 1:
+                  raise SystemExit(
+                      f"Expected exactly one asset reference: {old}; found {count}"
+                  )
+
+              text = text.replace(old, new, 1)
+
+          path.write_text(text, encoding="utf-8")
+
+          print(f"ASSET_REVISION={revision}")
+          print("CACHE_BUSTED=site.css,site.js")
+          PY
+
+          REVISION="${GITHUB_SHA:0:12}"
+          grep -Fq "/subshell/assets/site.css?v=${REVISION}" site/index.html
+          grep -Fq "/subshell/assets/site.js?v=${REVISION}" site/index.html
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
