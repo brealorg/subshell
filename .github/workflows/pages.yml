@@ -30,7 +30,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # PUBLIC01C11_DEPLOY_TIME_ASSET_CACHE_BUST_V1
+      # PUBLIC01C12_ALL_HTML_ASSET_CACHE_BUST_V1
       - name: Version static assets
         shell: bash
         run: |
@@ -38,40 +38,67 @@ jobs:
           from pathlib import Path
           import os
 
-          path = Path("site/index.html")
-          text = path.read_text(encoding="utf-8")
           revision = os.environ["GITHUB_SHA"][:12]
+          html_files = sorted(Path("site").rglob("*.html"))
 
-          replacements = (
-              (
-                  'href="/subshell/assets/site.css"',
-                  f'href="/subshell/assets/site.css?v={revision}"',
-              ),
-              (
-                  'src="/subshell/assets/site.js"',
-                  f'src="/subshell/assets/site.js?v={revision}"',
-              ),
-          )
+          if not html_files:
+              raise SystemExit("No HTML files found under site/")
 
-          for old, new in replacements:
-              count = text.count(old)
+          css_refs = 0
+          js_refs = 0
 
-              if count != 1:
+          for path in html_files:
+              text = path.read_text(encoding="utf-8")
+
+              css_old = 'href="/subshell/assets/site.css"'
+              js_old = 'src="/subshell/assets/site.js"'
+
+              css_count = text.count(css_old)
+              js_count = text.count(js_old)
+
+              if css_count > 1 or js_count > 1:
                   raise SystemExit(
-                      f"Expected exactly one asset reference: {old}; found {count}"
+                      f"Unexpected duplicate asset reference in {path}"
                   )
 
-              text = text.replace(old, new, 1)
+              if css_count:
+                  text = text.replace(
+                      css_old,
+                      f'href="/subshell/assets/site.css?v={revision}"',
+                      1,
+                  )
+                  css_refs += 1
 
-          path.write_text(text, encoding="utf-8")
+              if js_count:
+                  text = text.replace(
+                      js_old,
+                      f'src="/subshell/assets/site.js?v={revision}"',
+                      1,
+                  )
+                  js_refs += 1
+
+              path.write_text(text, encoding="utf-8")
+
+          if css_refs < 4:
+              raise SystemExit(
+                  f"Expected at least four CSS references; found {css_refs}"
+              )
+
+          if js_refs != 1:
+              raise SystemExit(
+                  f"Expected exactly one JS reference; found {js_refs}"
+              )
 
           print(f"ASSET_REVISION={revision}")
-          print("CACHE_BUSTED=site.css,site.js")
+          print(f"CACHE_BUSTED_CSS_PAGES={css_refs}")
+          print(f"CACHE_BUSTED_JS_PAGES={js_refs}")
           PY
 
           REVISION="${GITHUB_SHA:0:12}"
-          grep -Fq "/subshell/assets/site.css?v=${REVISION}" site/index.html
-          grep -Fq "/subshell/assets/site.js?v=${REVISION}" site/index.html
+
+          grep -R -Fq             "/subshell/assets/site.css?v=${REVISION}"             site
+
+          grep -Fq             "/subshell/assets/site.js?v=${REVISION}"             site/index.html
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
