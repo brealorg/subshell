@@ -16,8 +16,21 @@
     content="subshell — an independent Android client for Reddit.">
 
   <meta
+    name="color-scheme"
+    content="light dark">
+
+  <meta
     name="theme-color"
-    content="#f7f5f2">
+    content="#fffbfe"
+    media="(prefers-color-scheme: light)">
+
+  <meta
+    name="theme-color"
+    content="#141218"
+    media="(prefers-color-scheme: dark)">
+
+  <!-- This site implements its own light/dark theme. -->
+  <meta name="darkreader-lock">
 
   <title>subshell — Android client for Reddit</title>
 
@@ -27,7 +40,7 @@
 </head>
 
 <body>
-  <!-- PUBLIC01C2_MATERIAL_EXPRESSIVE_RESET_V1 -->
+  <!-- PUBLIC01C3_MATERIAL3_CONTAINMENT_V1 -->
 
   <a class="skip-link" href="#main">
     Skip to content
@@ -41,15 +54,13 @@
         href="/subshell/"
         aria-label="subshell home">
 
-        <span class="brand-mark" aria-hidden="true">
-          <i></i>
-          <i></i>
-          <i></i>
+        <span class="brand-symbol" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
         </span>
 
-        <span class="brand-name">
-          subshell
-        </span>
+        <strong>subshell</strong>
       </a>
 
       <nav
@@ -68,184 +79,137 @@
         <a href="https://github.com/brealorg/subshell">
           GitHub
         </a>
-
-        <span
-          class="top-beta"
-          aria-disabled="true">
-          Beta soon
-        </span>
       </nav>
     </div>
   </header>
 
   <main id="main">
 
-    <section class="hero">
-      <div class="shell hero-grid">
+    <section class="hero-section">
+      <div class="shell">
 
-        <div class="hero-copy">
+        <div class="hero-surface">
 
-          <p class="eyebrow">
-            A Reddit client for Android
-          </p>
+          <div class="hero-copy">
 
-          <h1>
-            subshell
-          </h1>
+            <p class="eyebrow">
+              Android · Reddit client
+            </p>
 
-          <p class="hero-title">
-            Reddit on Android,<br>
-            your way.
-          </p>
+            <h1>
+              subshell
+            </h1>
 
-          <p class="hero-description">
-            A focused and independent Android client for Reddit.
-            Built for everyday Reddit use without unnecessary clutter.
-          </p>
+            <p class="hero-title">
+              Reddit on Android,<br>
+              your way.
+            </p>
 
-          <div class="hero-actions">
+            <p class="hero-description">
+              An independent Android client built for everyday Reddit use.
+            </p>
 
-            <span
-              class="button button-primary"
-              aria-disabled="true">
-              Public beta coming soon
-            </span>
+            <div class="hero-actions">
 
-            <a
-              class="button button-secondary"
-              href="https://github.com/brealorg/subshell">
+              <span
+                class="button button-filled"
+                aria-disabled="true">
+                Public beta soon
+              </span>
 
-              <svg
-                class="button-icon"
-                viewBox="0 0 24 24"
-                aria-hidden="true">
+              <a
+                class="button button-tonal"
+                href="https://github.com/brealorg/subshell">
 
-                <path
-                  fill="currentColor"
-                  d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.21-3.37-1.21-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .08 1.53 1.06 1.53 1.06.9 1.56 2.35 1.11 2.92.85.09-.66.35-1.11.64-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.4 9.4 0 0 1 12 6.98a9.4 9.4 0 0 1 2.5.35c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.35 4.8-4.58 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.59.69.49A10.25 10.25 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z"/>
-              </svg>
+                <svg
+                  class="button-icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true">
 
-              View on GitHub
-            </a>
+                  <path
+                    fill="currentColor"
+                    d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.21-3.37-1.21-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .08 1.53 1.06 1.53 1.06.9 1.56 2.35 1.11 2.92.85.09-.66.35-1.11.64-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.4 9.4 0 0 1 12 6.98a9.4 9.4 0 0 1 2.5.35c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.35 4.8-4.58 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.59.69.49A10.25 10.25 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z"/>
+                </svg>
+
+                GitHub
+              </a>
+            </div>
           </div>
 
-          <p class="release-note">
-            Public beta builds will be distributed as signed Android APKs.
-          </p>
-        </div>
+          <div class="preview-container">
 
-        <div
-          class="device-stage"
-          aria-label="subshell screenshot preview placeholders">
+            <div class="preview-label">
+              <span>Home</span>
+              <span>Real screenshot next</span>
+            </div>
 
-          <figure class="device device-primary">
-            <div class="device-frame">
-              <div class="screen screen-dark">
+            <div
+              class="app-preview"
+              aria-label="Placeholder for a real subshell Home screenshot">
 
-                <div class="status-row">
-                  <span>12:30</span>
-                  <span>● ● ●</span>
-                </div>
+              <div class="app-status">
+                <strong>subshell</strong>
 
-                <div class="screen-toolbar">
-                  <span class="menu">☰</span>
-                  <strong>Home</strong>
-                  <span>⌕</span>
-                </div>
+                <span aria-hidden="true">
+                  ◌ &nbsp; ⋮
+                </span>
+              </div>
 
-                <div class="screen-tabs">
-                  <strong>Hot</strong>
-                  <span>New</span>
-                  <span>Top</span>
-                </div>
+              <div class="app-tabs">
+                <strong>Home</strong>
+                <span>Best</span>
+              </div>
 
-                <div class="fake-post">
-                  <div class="post-meta">
-                    <span class="avatar"></span>
-                    <span>r/subshell</span>
+              <article class="fake-post">
+
+                <div class="post-author">
+                  <i></i>
+
+                  <div>
+                    <strong>r/subshell</strong>
                     <small>4h</small>
                   </div>
-
-                  <strong>
-                    Real Home screenshot
-                  </strong>
-
-                  <div class="media-placeholder">
-                    Screenshot slot
-                  </div>
-
-                  <div class="post-actions">
-                    <span>↑ 1.2k</span>
-                    <span>○ 42</span>
-                    <span>▯</span>
-                  </div>
                 </div>
 
-                <div class="fake-post compact">
-                  <div class="post-meta">
-                    <span class="avatar alt"></span>
-                    <span>r/android</span>
+                <h2>
+                  Real app content will live here.
+                </h2>
+
+                <div class="post-media">
+                  Home screenshot
+                </div>
+
+                <div class="post-actions">
+                  <span>↑ 1.2k</span>
+                  <span>○ 42</span>
+                  <span>▯</span>
+                </div>
+              </article>
+
+              <article class="fake-post fake-post-small">
+
+                <div class="post-author">
+                  <i class="green"></i>
+
+                  <div>
+                    <strong>r/android</strong>
                     <small>6h</small>
                   </div>
-
-                  <strong>
-                    Real app content will replace this preview
-                  </strong>
                 </div>
 
-                <div class="bottom-nav">
-                  <strong>⌂</strong>
-                  <span>▤</span>
-                  <span>＋</span>
-                  <span>♧</span>
-                  <span>○</span>
-                </div>
+                <h2>
+                  A focused Reddit experience on Android.
+                </h2>
+              </article>
+
+              <div class="app-nav" aria-hidden="true">
+                <strong>⌂</strong>
+                <span>⌕</span>
+                <span>◎</span>
+                <span>♧</span>
               </div>
             </div>
-
-            <figcaption>
-              Home screenshot
-            </figcaption>
-          </figure>
-
-          <figure class="device device-secondary">
-            <div class="device-frame">
-              <div class="screen screen-light">
-
-                <div class="status-row">
-                  <span>12:30</span>
-                  <span>● ● ●</span>
-                </div>
-
-                <div class="screen-toolbar">
-                  <strong>Communities</strong>
-                  <span>⌕</span>
-                </div>
-
-                <p class="community-heading">
-                  Your communities
-                </p>
-
-                <div class="community-list">
-                  <span><i></i>r/android <b>☆</b></span>
-                  <span><i></i>r/space <b>☆</b></span>
-                  <span><i></i>r/photography <b>☆</b></span>
-                  <span><i></i>r/science <b>☆</b></span>
-                  <span><i></i>r/technology <b>☆</b></span>
-                  <span><i></i>r/gaming <b>☆</b></span>
-                  <span><i></i>r/AskReddit <b>☆</b></span>
-                </div>
-
-                <p class="slot-note">
-                  Real Communities screenshot
-                </p>
-              </div>
-            </div>
-
-            <figcaption>
-              Communities screenshot
-            </figcaption>
-          </figure>
+          </div>
         </div>
       </div>
     </section>
@@ -258,33 +222,39 @@
 
         <div class="beta-surface">
 
-          <div class="beta-copy">
-            <p class="beta-label">
+          <div class="beta-status">
+
+            <span class="status-dot" aria-hidden="true"></span>
+
+            <span>
               Public beta
-            </p>
+            </span>
+          </div>
 
-            <h2>
-              The first public beta is coming soon.
-            </h2>
+          <div class="beta-content">
 
-            <p>
-              We are preparing the first public beta release.
-              It will be distributed as a signed Android APK through GitHub.
-            </p>
+            <div>
+              <h2>
+                First public beta is being prepared.
+              </h2>
+
+              <p>
+                The release will be a signed Android APK distributed
+                through GitHub Releases.
+              </p>
+            </div>
 
             <a
-              class="button button-dark"
+              class="button button-filled"
               href="https://github.com/brealorg/subshell">
-              Follow progress on GitHub
+              Follow on GitHub
             </a>
           </div>
 
-          <div
-            class="beta-art"
-            aria-hidden="true">
-
-            <span class="beta-art-ring"></span>
-            <strong>APK</strong>
+          <div class="beta-meta" aria-label="Beta distribution details">
+            <span>Android</span>
+            <span>Signed APK</span>
+            <span>GitHub Releases</span>
           </div>
         </div>
       </div>
@@ -300,7 +270,7 @@
         </strong>
 
         <p>
-          An independent Android client for Reddit.<br>
+          Independent Android client for Reddit.<br>
           Not affiliated with, endorsed by, or sponsored by Reddit.
         </p>
       </div>

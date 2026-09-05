@@ -12,8 +12,20 @@
     content="noindex, nofollow">
 
   <meta
+    name="color-scheme"
+    content="light dark">
+
+  <meta
     name="theme-color"
-    content="#f7f5f2">
+    content="#fffbfe"
+    media="(prefers-color-scheme: light)">
+
+  <meta
+    name="theme-color"
+    content="#141218"
+    media="(prefers-color-scheme: dark)">
+
+  <meta name="darkreader-lock">
 
   <title>Not found — subshell</title>
 
@@ -23,26 +35,30 @@
 </head>
 
 <body>
-  <main class="hero">
+  <main class="hero-section">
     <div class="shell">
-      <div class="hero-copy">
-        <p class="eyebrow">
-          404
-        </p>
 
-        <h1>
-          Not found.
-        </h1>
+      <div class="hero-surface">
+        <div class="hero-copy">
 
-        <p class="hero-description">
-          That page does not exist.
-        </p>
+          <p class="eyebrow">
+            404
+          </p>
 
-        <a
-          class="button button-secondary"
-          href="/subshell/">
-          Back to subshell
-        </a>
+          <h1>
+            Not found.
+          </h1>
+
+          <p class="hero-description">
+            That page does not exist.
+          </p>
+
+          <a
+            class="button button-tonal"
+            href="/subshell/">
+            Back to subshell
+          </a>
+        </div>
       </div>
     </div>
   </main>
