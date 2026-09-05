@@ -1531,3 +1531,12 @@ body.gallery-dialog-open {
     scroll-behavior: auto;
   }
 }
+
+
+/* PUBLIC01C7R1_DIALOG_NAV_VISIBILITY_V1 */
+
+.gallery-dialog-nav:disabled {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

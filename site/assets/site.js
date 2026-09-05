@@ -190,23 +190,32 @@
       );
     }
 
+    // PUBLIC01C7R1_FULLSCREEN_SELECTION_FIX_V1
+    //
+    // Resolve from actual viewport overlap rather than relying on the
+    // cached index or offsetLeft/scrollLeft timing around scroll-snap.
     function nearestIndex() {
-      const left = track.scrollLeft;
+      const trackRect = track.getBoundingClientRect();
 
       let best = 0;
-      let bestDistance = Infinity;
+      let bestVisibleWidth = -1;
 
       slides.forEach((slide, candidate) => {
-        const distance =
-          Math.abs(slide.offsetLeft - left);
+        const slideRect = slide.getBoundingClientRect();
 
-        if (distance < bestDistance) {
+        const visibleWidth = Math.max(
+          0,
+          Math.min(slideRect.right, trackRect.right) -
+            Math.max(slideRect.left, trackRect.left)
+        );
+
+        if (visibleWidth > bestVisibleWidth) {
           best = candidate;
-          bestDistance = distance;
+          bestVisibleWidth = visibleWidth;
         }
       });
 
-      return best;
+      return bounded(best);
     }
 
     function render() {
@@ -247,6 +256,14 @@
         index = nextIndex;
         render();
       }
+
+      return index;
+    }
+
+    function openCurrentDialog() {
+      index = nearestIndex();
+      render();
+      openDialog(index);
     }
 
     function renderDialog() {
@@ -318,7 +335,7 @@
 
     fullscreen.addEventListener(
       "click",
-      () => openDialog(index)
+      openCurrentDialog
     );
 
     dots.forEach((dot) => {
@@ -360,7 +377,7 @@
           event.key === " "
         ) {
           event.preventDefault();
-          openDialog(index);
+          openCurrentDialog();
         }
       }
     );
