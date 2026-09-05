@@ -270,11 +270,12 @@
       dialogIndex = bounded(dialogIndex);
 
       const slide = slides[dialogIndex];
-      const shot = slide.querySelector(".gallery-shot");
+      const sourceImage =
+        slide.querySelector(".gallery-shot-image img");
       const title =
         slide.dataset.galleryTitle || "Screenshot";
 
-      if (!shot) {
+      if (!sourceImage) {
         return;
       }
 
@@ -286,8 +287,28 @@
       dialogNext.disabled =
         dialogIndex === slides.length - 1;
 
+      // PUBLIC01C10R2_DIRECT_FULLSCREEN_IMAGE_V2
+      // Render the source image directly. Do not clone the fixed-height
+      // gallery preview wrapper into fullscreen.
+      const dialogImage = sourceImage.cloneNode(true);
+
+      dialogImage.removeAttribute("loading");
+      dialogImage.removeAttribute("fetchpriority");
+
+      Object.assign(dialogImage.style, {
+        width: "100%",
+        height: "100%",
+        minWidth: "0",
+        minHeight: "0",
+        maxWidth: "100%",
+        maxHeight: "100%",
+        display: "block",
+        objectFit: "contain",
+        objectPosition: "center"
+      });
+
       dialogContent.replaceChildren(
-        shot.cloneNode(true)
+        dialogImage
       );
     }
 
