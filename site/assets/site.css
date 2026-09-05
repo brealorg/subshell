@@ -2282,7 +2282,7 @@ body.gallery-dialog-open {
   margin-top: 7px;
 }
 
-.info-content a {
+.info-content a:not(.button) {
   color: var(--md-sys-color-primary);
   text-underline-offset: 3px;
 }
