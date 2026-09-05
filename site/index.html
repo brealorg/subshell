@@ -184,77 +184,273 @@
           </div>
 
           <div class="preview-container">
+            <!-- PUBLIC01C7_SCREENSHOT_GALLERY_V1 -->
 
-            <div class="preview-label">
-              <span>Home</span>
-              <span>Real screenshot next</span>
+            <div class="gallery-header">
+              <div>
+                <strong>Screenshots</strong>
+                <span>Real app captures coming next</span>
+              </div>
+
+              <div class="gallery-status">
+                <span
+                  id="gallery-counter"
+                  aria-live="polite">
+                  1 / 4
+                </span>
+
+                <button
+                  class="gallery-icon-button"
+                  id="gallery-fullscreen"
+                  type="button"
+                  aria-label="Open current screenshot fullscreen"
+                  title="Fullscreen">
+                  <svg
+                    viewBox="0 0 24 24"
+                    aria-hidden="true">
+                    <path
+                      fill="currentColor"
+                      d="M5 5h5v2H7v3H5V5Zm9 0h5v5h-2V7h-3V5ZM5 14h2v3h3v2H5v-5Zm12 0h2v5h-5v-2h3v-3Z"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="gallery-shell">
+              <button
+                class="gallery-nav-button gallery-prev"
+                id="gallery-prev"
+                type="button"
+                aria-label="Previous screenshot">
+                <span aria-hidden="true">‹</span>
+              </button>
+
+              <div
+                class="gallery-track"
+                id="gallery-track"
+                tabindex="0"
+                aria-label="Subshell screenshots">
+
+                <figure
+                  class="gallery-slide"
+                  data-gallery-title="Home">
+                  <button
+                    class="gallery-open"
+                    type="button"
+                    data-gallery-index="0"
+                    aria-label="Open Home screenshot fullscreen">
+
+                    <div class="gallery-shot gallery-shot-home">
+                      <div class="shot-topbar">
+                        <strong>subshell</strong>
+                        <span>⌕ &nbsp; ⋮</span>
+                      </div>
+
+                      <div class="shot-heading">
+                        <strong>Home</strong>
+                        <span>Best</span>
+                      </div>
+
+                      <div class="shot-post">
+                        <div class="shot-meta">
+                          <i></i>
+                          <span>r/subshell</span>
+                          <small>4h</small>
+                        </div>
+
+                        <strong>Real Home screenshot</strong>
+
+                        <div class="shot-media">
+                          Home
+                        </div>
+
+                        <div class="shot-actions">
+                          <span>↑ 1.2k</span>
+                          <span>○ 42</span>
+                          <span>▯</span>
+                        </div>
+                      </div>
+
+                      <div class="shot-post compact">
+                        <div class="shot-meta">
+                          <i class="green"></i>
+                          <span>r/android</span>
+                          <small>6h</small>
+                        </div>
+
+                        <strong>
+                          Real app capture will replace this slot.
+                        </strong>
+                      </div>
+
+                      <div class="shot-bottom-nav">
+                        <strong>⌂</strong>
+                        <span>⌕</span>
+                        <span>◎</span>
+                        <span>♧</span>
+                      </div>
+                    </div>
+                  </button>
+
+                  <figcaption>
+                    Home
+                  </figcaption>
+                </figure>
+
+                <figure
+                  class="gallery-slide"
+                  data-gallery-title="Comments">
+                  <button
+                    class="gallery-open"
+                    type="button"
+                    data-gallery-index="1"
+                    aria-label="Open Comments screenshot fullscreen">
+
+                    <div class="gallery-shot gallery-shot-comments">
+                      <div class="shot-topbar">
+                        <strong>Comments</strong>
+                        <span>⋮</span>
+                      </div>
+
+                      <div class="shot-thread-title">
+                        A real Reddit thread in subshell
+                      </div>
+
+                      <div class="shot-comment">
+                        <strong>user_one</strong>
+                        <p>
+                          This slot will become a real comments screenshot.
+                        </p>
+                      </div>
+
+                      <div class="shot-comment nested">
+                        <strong>user_two</strong>
+                        <p>
+                          Nested comments and vote controls.
+                        </p>
+                      </div>
+
+                      <div class="shot-comment nested deeper">
+                        <strong>user_three</strong>
+                        <p>
+                          Exact UI, no fake phone frame.
+                        </p>
+                      </div>
+                    </div>
+                  </button>
+
+                  <figcaption>
+                    Comments
+                  </figcaption>
+                </figure>
+
+                <figure
+                  class="gallery-slide"
+                  data-gallery-title="Communities">
+                  <button
+                    class="gallery-open"
+                    type="button"
+                    data-gallery-index="2"
+                    aria-label="Open Communities screenshot fullscreen">
+
+                    <div class="gallery-shot gallery-shot-communities">
+                      <div class="shot-topbar">
+                        <strong>Communities</strong>
+                        <span>⌕</span>
+                      </div>
+
+                      <div class="shot-section-label">
+                        Your communities
+                      </div>
+
+                      <div class="shot-community-list">
+                        <span><i></i>r/android <b>›</b></span>
+                        <span><i></i>r/space <b>›</b></span>
+                        <span><i></i>r/photography <b>›</b></span>
+                        <span><i></i>r/science <b>›</b></span>
+                        <span><i></i>r/selfhosted <b>›</b></span>
+                        <span><i></i>r/linux <b>›</b></span>
+                      </div>
+                    </div>
+                  </button>
+
+                  <figcaption>
+                    Communities
+                  </figcaption>
+                </figure>
+
+                <figure
+                  class="gallery-slide"
+                  data-gallery-title="Inbox">
+                  <button
+                    class="gallery-open"
+                    type="button"
+                    data-gallery-index="3"
+                    aria-label="Open Inbox screenshot fullscreen">
+
+                    <div class="gallery-shot gallery-shot-inbox">
+                      <div class="shot-topbar">
+                        <strong>Inbox</strong>
+                        <span>⋮</span>
+                      </div>
+
+                      <div class="shot-tabs">
+                        <strong>Activity</strong>
+                        <span>Messages</span>
+                        <span>Modmail</span>
+                      </div>
+
+                      <div class="shot-inbox-list">
+                        <span><i></i><b>Reply to your comment</b><small>3h</small></span>
+                        <span><i></i><b>New message</b><small>5h</small></span>
+                        <span><i></i><b>Moderator update</b><small>8h</small></span>
+                        <span><i></i><b>New reply</b><small>1d</small></span>
+                        <span><i></i><b>Saved activity</b><small>1d</small></span>
+                      </div>
+                    </div>
+                  </button>
+
+                  <figcaption>
+                    Inbox
+                  </figcaption>
+                </figure>
+              </div>
+
+              <button
+                class="gallery-nav-button gallery-next"
+                id="gallery-next"
+                type="button"
+                aria-label="Next screenshot">
+                <span aria-hidden="true">›</span>
+              </button>
             </div>
 
             <div
-              class="app-preview"
-              aria-label="Placeholder for a real subshell Home screenshot">
+              class="gallery-dots"
+              id="gallery-dots"
+              aria-label="Screenshot position">
 
-              <div class="app-status">
-                <strong>subshell</strong>
+              <button
+                type="button"
+                class="active"
+                data-gallery-go="0"
+                aria-label="Go to Home screenshot"
+                aria-current="true"></button>
 
-                <span aria-hidden="true">
-                  ◌ &nbsp; ⋮
-                </span>
-              </div>
+              <button
+                type="button"
+                data-gallery-go="1"
+                aria-label="Go to Comments screenshot"></button>
 
-              <div class="app-tabs">
-                <strong>Home</strong>
-                <span>Best</span>
-              </div>
+              <button
+                type="button"
+                data-gallery-go="2"
+                aria-label="Go to Communities screenshot"></button>
 
-              <article class="fake-post">
-
-                <div class="post-author">
-                  <i></i>
-
-                  <div>
-                    <strong>r/subshell</strong>
-                    <small>4h</small>
-                  </div>
-                </div>
-
-                <h2>
-                  Real app content will live here.
-                </h2>
-
-                <div class="post-media">
-                  Home screenshot
-                </div>
-
-                <div class="post-actions">
-                  <span>↑ 1.2k</span>
-                  <span>○ 42</span>
-                  <span>▯</span>
-                </div>
-              </article>
-
-              <article class="fake-post fake-post-small">
-
-                <div class="post-author">
-                  <i class="green"></i>
-
-                  <div>
-                    <strong>r/android</strong>
-                    <small>6h</small>
-                  </div>
-                </div>
-
-                <h2>
-                  A focused Reddit experience on Android.
-                </h2>
-              </article>
-
-              <div class="app-nav" aria-hidden="true">
-                <strong>⌂</strong>
-                <span>⌕</span>
-                <span>◎</span>
-                <span>♧</span>
-              </div>
+              <button
+                type="button"
+                data-gallery-go="3"
+                aria-label="Go to Inbox screenshot"></button>
             </div>
           </div>
         </div>
@@ -350,5 +546,53 @@
       </nav>
     </div>
   </footer>
+
+  <dialog
+    class="gallery-dialog"
+    id="gallery-dialog"
+    aria-labelledby="gallery-dialog-title">
+
+    <div class="gallery-dialog-toolbar">
+      <strong id="gallery-dialog-title">
+        Screenshot
+      </strong>
+
+      <span id="gallery-dialog-counter">
+        1 / 4
+      </span>
+
+      <button
+        class="gallery-dialog-close"
+        id="gallery-dialog-close"
+        type="button"
+        aria-label="Close fullscreen screenshot">
+        ×
+      </button>
+    </div>
+
+    <div class="gallery-dialog-stage">
+      <button
+        class="gallery-dialog-nav gallery-dialog-prev"
+        id="gallery-dialog-prev"
+        type="button"
+        aria-label="Previous screenshot">
+        ‹
+      </button>
+
+      <div
+        class="gallery-dialog-content"
+        id="gallery-dialog-content">
+      </div>
+
+      <button
+        class="gallery-dialog-nav gallery-dialog-next"
+        id="gallery-dialog-next"
+        type="button"
+        aria-label="Next screenshot">
+        ›
+      </button>
+    </div>
+  </dialog>
+
 </body>
 </html>
