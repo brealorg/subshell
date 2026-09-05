@@ -1950,3 +1950,167 @@ body.gallery-dialog-open {
     height: 365px;
   }
 }
+
+
+/* PUBLIC01C9R1_MOBILE_MICRO_POLISH_V1 */
+
+@media (max-width: 640px) {
+
+  /* Reduce visual dominance without changing hierarchy. */
+  .hero-surface {
+    padding:
+      21px
+      17px
+      16px;
+  }
+
+  .eyebrow {
+    margin-bottom: 11px;
+  }
+
+  .hero-copy h1 {
+    font-size: 52px;
+    line-height: 0.96;
+  }
+
+  .hero-title {
+    margin:
+      9px
+      0
+      16px;
+
+    font-size: 28px;
+    line-height: 1.09;
+  }
+
+  .hero-description {
+    margin-bottom: 18px;
+
+    font-size: 14px;
+    line-height: 1.46;
+  }
+
+  .hero-actions {
+    gap: 8px;
+  }
+
+  .hero-actions .button {
+    min-height: 42px;
+    padding-inline: 15px;
+
+    font-size: 13px;
+  }
+
+
+  /* Pull product imagery upward and slightly reduce screenshot scale. */
+  .preview-container {
+    margin-top: 20px;
+    padding: 9px;
+  }
+
+  .gallery-header {
+    margin-bottom: 8px;
+  }
+
+  .gallery-shot-image {
+    min-height: 370px;
+  }
+
+  .gallery-shot-image img {
+    height: 370px;
+  }
+
+  .gallery-dots {
+    padding-top: 8px;
+  }
+
+
+  /* Beta is supporting information, not a second hero. */
+  .beta-section {
+    padding-bottom: 12px;
+  }
+
+  .beta-surface {
+    padding:
+      20px
+      17px;
+  }
+
+  .beta-status {
+    margin-bottom: 9px;
+  }
+
+  .beta-content {
+    gap: 15px;
+  }
+
+  .beta-content h2 {
+    margin-bottom: 6px;
+
+    font-size: 23px;
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+  }
+
+  .beta-content p {
+    font-size: 14px;
+    line-height: 1.46;
+  }
+
+  .beta-content .button {
+    min-height: 42px;
+    padding-inline: 16px;
+
+    font-size: 13px;
+  }
+
+  .beta-meta {
+    margin-top: 16px;
+  }
+
+  .beta-meta span {
+    padding:
+      5px
+      9px;
+
+    font-size: 10px;
+  }
+
+
+  /* Final page rhythm. */
+  .site-footer {
+    padding:
+      5px
+      0
+      22px;
+  }
+
+  .footer-inner {
+    padding-top: 12px;
+    gap: 18px;
+  }
+}
+
+
+@media (max-width: 380px) {
+
+  .hero-copy h1 {
+    font-size: 49px;
+  }
+
+  .hero-title {
+    font-size: 27px;
+  }
+
+  .gallery-shot-image {
+    min-height: 350px;
+  }
+
+  .gallery-shot-image img {
+    height: 350px;
+  }
+
+  .beta-content h2 {
+    font-size: 22px;
+  }
+}
