@@ -733,3 +733,153 @@ a:focus-visible,
     scroll-behavior: auto;
   }
 }
+
+
+/* PUBLIC01C5_DYNAMIC_COLOUR_V1 */
+
+.palette-toggle {
+  min-height: 40px;
+  padding: 0 12px;
+
+  border: 0;
+  border-radius: var(--shape-full);
+
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  background: var(--md-sys-color-surface-container-high);
+  color: var(--md-sys-color-on-surface-variant);
+
+  font: inherit;
+  font-size: 12px;
+  font-weight: 650;
+
+  cursor: pointer;
+}
+
+.palette-toggle:hover:not(:disabled) {
+  background: var(--md-sys-color-secondary-container);
+  color: var(--md-sys-color-on-secondary-container);
+}
+
+.palette-toggle:disabled {
+  opacity: 0.48;
+  cursor: not-allowed;
+}
+
+.palette-toggle-icon {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+}
+
+.palette-toggle-track {
+  width: 36px;
+  height: 22px;
+  padding: 2px;
+
+  border: 1px solid var(--md-sys-color-outline);
+  border-radius: var(--shape-full);
+
+  display: flex;
+  align-items: center;
+
+  background: var(--md-sys-color-surface-container);
+
+  transition:
+    background-color 140ms ease,
+    border-color 140ms ease;
+}
+
+.palette-toggle-thumb {
+  width: 16px;
+  height: 16px;
+
+  border-radius: 50%;
+
+  background: var(--md-sys-color-outline);
+
+  transform: translateX(0);
+
+  transition:
+    transform 140ms ease,
+    background-color 140ms ease;
+}
+
+.palette-toggle[aria-pressed="true"]
+.palette-toggle-track {
+  border-color: var(--md-sys-color-primary);
+  background: var(--md-sys-color-primary);
+}
+
+.palette-toggle[aria-pressed="true"]
+.palette-toggle-thumb {
+  background: var(--md-sys-color-on-primary);
+  transform: translateX(14px);
+}
+
+
+/*
+ * Best-effort device colour.
+ *
+ * The canonical Subshell palette remains the fallback.
+ * The fixed Subshell SVG logo deliberately does not inherit
+ * these variables and therefore remains orange.
+ */
+@supports
+  (color: AccentColor) and
+  (color: color-mix(in oklab, red 20%, blue)) {
+
+  :root[data-palette="device"] {
+    --md-sys-color-primary:
+      AccentColor;
+
+    --md-sys-color-on-primary:
+      AccentColorText;
+
+    --md-sys-color-primary-container:
+      color-mix(
+        in oklab,
+        AccentColor 22%,
+        var(--md-sys-color-surface-container-high)
+      );
+
+    --md-sys-color-on-primary-container:
+      var(--md-sys-color-on-surface);
+
+    --md-sys-color-secondary-container:
+      color-mix(
+        in oklab,
+        AccentColor 13%,
+        var(--md-sys-color-surface-container)
+      );
+
+    --md-sys-color-on-secondary-container:
+      var(--md-sys-color-on-surface);
+  }
+}
+
+@media (max-width: 760px) {
+  .palette-toggle-label {
+    display: none;
+  }
+
+  .palette-toggle {
+    padding-inline: 9px;
+    gap: 7px;
+  }
+}
+
+@media (max-width: 640px) {
+  .palette-toggle-icon {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .palette-toggle-track,
+  .palette-toggle-thumb {
+    transition: none;
+  }
+}
