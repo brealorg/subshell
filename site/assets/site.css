@@ -1540,3 +1540,67 @@ body.gallery-dialog-open {
   visibility: hidden;
   pointer-events: none;
 }
+
+
+/* PUBLIC01C8_REAL_SCREENSHOT_RENDERING_V1 */
+
+.gallery-shot-image {
+  min-height: 500px;
+  padding: 0;
+
+  display: grid;
+  place-items: center;
+
+  background: #0e0f13;
+}
+
+.gallery-shot-image img {
+  width: 100%;
+  height: 500px;
+
+  display: block;
+
+  object-fit: contain;
+  object-position: center top;
+
+  border-radius: 28px;
+
+  background: #0e0f13;
+}
+
+.gallery-dialog-content .gallery-shot-image {
+  min-height: 0;
+  padding: 0;
+
+  background: transparent;
+}
+
+.gallery-dialog-content .gallery-shot-image img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: calc(94vh - 116px);
+
+  margin-inline: auto;
+
+  object-fit: contain;
+
+  border-radius: 20px;
+}
+
+@media (max-width: 640px) {
+  .gallery-shot-image {
+    min-height: 430px;
+  }
+
+  .gallery-shot-image img {
+    height: 430px;
+  }
+
+  .gallery-dialog-content .gallery-shot-image img {
+    height: auto;
+    max-height: calc(100dvh - 82px);
+
+    border-radius: 14px;
+  }
+}
