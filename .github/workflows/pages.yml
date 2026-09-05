@@ -84,9 +84,9 @@ jobs:
                   f"Expected at least four CSS references; found {css_refs}"
               )
 
-          if js_refs != 1:
+          if js_refs != 4:
               raise SystemExit(
-                  f"Expected exactly one JS reference; found {js_refs}"
+                  f"Expected exactly four JS references; found {js_refs}"
               )
 
           print(f"ASSET_REVISION={revision}")
