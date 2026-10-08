@@ -1,11 +1,11 @@
 # subshell
 
-**Public beta available — 0.78.0-beta.1**
+**Public beta available — 0.79-beta**
 
 **subshell** is an independent Android client for Reddit, built for
 everyday Reddit use with a Material 3 interface.
 
-**[Download the current public beta](https://github.com/brealorg/subshell/releases/tag/v0.78.0-beta.1)**
+**[Download the current public beta](https://github.com/brealorg/subshell/releases/tag/v0.79-beta)**
 
 [Website](https://brealorg.github.io/subshell/) ·
 [Releases](https://github.com/brealorg/subshell/releases) ·
@@ -27,7 +27,7 @@ everyday Reddit use with a Material 3 interface.
 
 ## Public beta
 
-**0.78.0-beta.1** is the current public beta of subshell.
+**0.79-beta** is the current public beta of subshell.
 
 The beta is distributed as a signed Android APK through GitHub Releases.
 The release includes a SHA-256 sidecar and a release provenance record so
