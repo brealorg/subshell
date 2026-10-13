@@ -495,3 +495,78 @@
     initGallery();
   }
 })();
+
+/* PUBLIC02_SHOWCASE_CAROUSEL_V1: one swipeable feature panel with tabs. */
+(() => {
+  "use strict";
+
+  function initShowcase() {
+    const track = document.getElementById("showcase-track");
+    const tabs = Array.from(document.querySelectorAll("[data-showcase-go]"));
+    if (!track || tabs.length === 0) {
+      return;
+    }
+    const slides = Array.from(track.querySelectorAll(".showcase-slide"));
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let current = 0;
+
+    const prev = document.getElementById("showcase-prev");
+    const next = document.getElementById("showcase-next");
+
+    function select(index) {
+      current = index;
+      if (prev) prev.disabled = index === 0;
+      if (next) next.disabled = index === slides.length - 1;
+      tabs.forEach((tab, i) => {
+        const active = i === index;
+        tab.classList.toggle("active", active);
+        tab.setAttribute("aria-selected", active ? "true" : "false");
+        tab.tabIndex = active ? 0 : -1;
+      });
+    }
+
+    function goTo(index, behavior) {
+      const bounded = Math.max(0, Math.min(slides.length - 1, index));
+      track.scrollTo({
+        left: slides[bounded].offsetLeft - track.offsetLeft,
+        behavior: behavior || (reduceMotion ? "auto" : "smooth"),
+      });
+      select(bounded);
+    }
+
+    tabs.forEach((tab, i) => {
+      tab.addEventListener("click", () => goTo(i));
+      tab.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowRight" || event.key === "ArrowLeft") {
+          event.preventDefault();
+          const next = current + (event.key === "ArrowRight" ? 1 : -1);
+          goTo(next);
+          tabs[Math.max(0, Math.min(tabs.length - 1, next))].focus();
+        }
+      });
+    });
+
+    let frame = 0;
+    track.addEventListener("scroll", () => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(() => {
+        const index = Math.round(track.scrollLeft / Math.max(1, track.clientWidth));
+        if (index !== current) {
+          select(Math.max(0, Math.min(slides.length - 1, index)));
+        }
+      });
+    }, { passive: true });
+
+    if (prev) prev.addEventListener("click", () => goTo(current - 1));
+    if (next) next.addEventListener("click", () => goTo(current + 1));
+
+    window.addEventListener("resize", () => goTo(current, "auto"));
+    select(0);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initShowcase, { once: true });
+  } else {
+    initShowcase();
+  }
+})();

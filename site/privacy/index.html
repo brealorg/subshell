@@ -7,13 +7,10 @@
     name="viewport"
     content="width=device-width, initial-scale=1">
 
-  <meta
-    name="robots"
-    content="noindex, nofollow">
 
   <meta
     name="description"
-    content="Privacy information for the subshell Android app and public website.">
+    content="How the subshell app and website handle data.">
 
   <meta
     name="color-scheme"
@@ -32,6 +29,8 @@
   <meta name="darkreader-lock">
 
   <title>Privacy — subshell</title>
+
+  <link rel="canonical" href="https://brealorg.github.io/subshell/support/">
 
   <link
     rel="icon"
@@ -82,8 +81,16 @@
         class="nav"
         aria-label="Primary navigation">
 
-        <a href="/subshell/#beta">
-          Beta
+        <a href="/subshell/#features">
+          Features
+        </a>
+
+        <a href="/subshell/get-started/">
+          Get started
+        </a>
+
+        <a href="/subshell/faq/">
+          FAQ
         </a>
 
         <a href="/subshell/support/">
@@ -141,113 +148,95 @@
             </h1>
 
             <p class="info-lede">
-              How Subshell handles app and website data.
+              How subshell handles app and website data.
             </p>
+
+            <div class="info-meta">
+              <span>Effective 13 October 2026</span>
+              <span>Android + website</span>
+            </div>
           </header>
 
           <div class="info-content">
             <section>
-              <div class="info-meta">
-                <span>Effective 5 September 2026</span>
-                <span>Android + website</span>
-              </div>
-            </section>
+              <h2>In short</h2>
+              <ul>
+                <li>No advertising, analytics, crash reporting or tracking. The project does not sell personal data.</li>
+                <li>subshell talks to Reddit for you. Your sign-in and Client ID stay encrypted on your device.</li>
+                <li>Backups go to a folder you choose, and only contain what you allow.</li>
+              </ul>
 
+            </section>
             <section>
-              <h2>Android app</h2>
-
+              <h2>Signing in</h2>
               <p>
-                When you choose to connect a Reddit account,
-                authentication is handled through Reddit. OAuth
-                credentials are stored in app-private encrypted storage
-                backed by Android Keystore and are not included in
-                Subshell settings backups.
+                You sign in on Reddit's own page inside the app. The session is stored in app-private storage encrypted with the Android Keystore. Your Client ID is kept in encrypted no-backup storage. Neither is ever part of a settings backup, and Android's own cloud backup is turned off for subshell. Logging out removes the session for that account.
               </p>
 
-              <p>
-                Subshell may process account identifiers, Reddit
-                listings, posts, comments, subscriptions, messages and
-                actions you explicitly request. Routine Reddit requests
-                are exchanged between the app and Reddit.
-              </p>
-
-              <p>
-                For offline and continuity features, the app may keep
-                Reddit content, account metadata and settings in
-                app-private local storage. User-selected backups and
-                downloaded media are separate files controlled by the
-                user.
-              </p>
             </section>
-
             <section>
-              <h2>Project data collection</h2>
+              <h2>Who the app talks to</h2>
+              <ul>
+                <li><strong>Reddit</strong> (oauth.reddit.com, www.reddit.com) for everything you read and do: feeds, posts, comments, votes, messages, moderation and account settings.</li>
+                <li><strong>Reddit's media servers</strong> (i.redd.it, v.redd.it, preview.redd.it and similar) for images and video.</li>
+                <li><strong>Reddit's chat server</strong> (matrix.redditspace.com) while Direct Chat is open. It is not used in the background.</li>
+                <li><strong>Known image hosts</strong> for images linked in comments, such as Imgur, Giphy, Tenor and Wikimedia. Images from other hosts stay links until you open them.</li>
+                <li><strong>RedGIFs</strong> (api.redgifs.com) only when you play a RedGIFs clip, which is only possible while <em>Show NSFW posts</em> is on. Nothing is asked of RedGIFs otherwise.</li>
+                <li><strong>GitHub Pages</strong> to check for a new beta, about every 12 hours. The request carries no account or device identifier.</li>
+              </ul>
 
-              <p>
-                Subshell does not use advertising or targeted tracking,
-                and the project does not sell personal data.
-              </p>
             </section>
+            <section>
+              <h2>Background work</h2>
+              <p>
+                While you are signed in and notifications are on, subshell checks Reddit's inbox about every 15 minutes to show notifications. It never marks anything as read in the background. The update check runs about twice a day. Both need a network connection and can be stopped by turning the feature off.
+              </p>
 
+            </section>
+            <section>
+              <h2>On your device</h2>
+              <p>
+                For speed and offline reading the app keeps Reddit content, account details and settings in app-private storage. Diagnostics keep a local history of app events; a report is only created and shared when you choose to, and it contains no screenshots, typed text or Reddit content. Images you save go to <em>Download/subshell</em>.
+              </p>
+              <p>
+                App lock, when you turn it on, uses Android's biometric or screen-lock prompt. subshell never sees your fingerprint, face or PIN.
+              </p>
+
+            </section>
+            <section>
+              <h2>Backups</h2>
+              <p>
+                Backups are written to a folder you pick, plus an internal history. They include your settings, joined communities, favorites and saved searches. Hidden and muted communities, post drafts, saved moderator responses and private user notes are included only if you turn them on. Your sign-in, Client ID and app lock are never included.
+              </p>
+
+            </section>
             <section>
               <h2>This website</h2>
-
               <p>
-                The Subshell website is a static GitHub Pages site. It
-                uses client-side JavaScript for the screenshot gallery
-                and optional presentation features. If dynamic device
-                colour is selected, the preference is stored locally in
-                the browser under <code>subshell.palette</code>.
+                This is a static GitHub Pages site. It uses JavaScript for the screenshot gallery and the optional dynamic colour toggle; that preference is stored in your browser under <code>subshell.palette</code>. There are no project analytics, advertising, tracking forms or project-set cookies. GitHub may process request metadata to host and secure the site.
               </p>
 
-              <p>
-                The site does not use project analytics, advertising,
-                tracking forms or project-set cookies. GitHub may process
-                request metadata needed to host and secure GitHub Pages
-                under GitHub's own policies.
-              </p>
             </section>
-
             <section>
-              <h2>Third-party services</h2>
-
+              <h2>Third parties</h2>
               <p>
-                Reddit processes information when the app connects to
-                Reddit services. GitHub processes information required to
-                host the public project and website. Their own terms and
-                privacy policies govern that processing.
+                Reddit, RedGIFs and GitHub process information when the app or this site connects to them. Their own terms and privacy policies govern that processing.
               </p>
-            </section>
 
+            </section>
             <section>
-              <h2>Retention and deletion</h2>
-
+              <h2>Deleting your data</h2>
               <p>
-                Logging out removes the corresponding local
-                authentication session. Clearing app storage or
-                uninstalling removes app-private local data.
-                User-selected backups and downloaded media must be
-                removed from their storage locations by the user.
+                Logging out removes that account's session. Clearing the app's storage or uninstalling removes everything the app keeps. Backups and saved images are your files; delete them from their folders.
               </p>
-            </section>
 
+            </section>
             <section>
               <h2>Questions</h2>
-
               <p>
-                Privacy questions can be raised through the project
-                support channels. Do not post credentials, tokens,
-                private messages or other sensitive account data in a
-                public issue.
+                Ask through <a href="/subshell/support/">Support</a>. Do not post credentials, tokens, private messages or other sensitive account data in a public issue.
               </p>
 
-              <div class="info-actions">
-                <a
-                  class="button button-tonal"
-                  href="/subshell/support/">
-                  Support
-                </a>
-              </div>
             </section>
 
           </div>
@@ -274,6 +263,18 @@
         class="footer-links"
         aria-label="Footer navigation">
 
+        <a href="/subshell/get-started/">
+          Get started
+        </a>
+
+        <a href="/subshell/changelog/">
+          What's new
+        </a>
+
+        <a href="/subshell/faq/">
+          FAQ
+        </a>
+
         <a href="/subshell/privacy/">
           Privacy
         </a>
@@ -293,6 +294,7 @@
         <a href="https://www.reddit.com/r/subshell/">
           r/subshell
         </a>
+
       </nav>
     </div>
   </footer>

@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1">
+
+
+  <meta
+    name="description"
+    content="Install the subshell beta, get your Reddit Client ID and sign in.">
+
+  <meta
+    name="color-scheme"
+    content="light dark">
+
+  <meta
+    name="theme-color"
+    content="#fff8f4"
+    media="(prefers-color-scheme: light)">
+
+  <meta
+    name="theme-color"
+    content="#17120f"
+    media="(prefers-color-scheme: dark)">
+
+  <meta name="darkreader-lock">
+
+  <title>Get started — subshell</title>
+
+  <link rel="canonical" href="https://brealorg.github.io/subshell/support/">
+
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="/subshell/assets/subshell-mark.svg">
+
+  <script>
+    try {
+      if (localStorage.getItem("subshell.palette") === "device") {
+        document.documentElement.dataset.palette = "device";
+      }
+    } catch (_) {}
+  </script>
+
+  <link
+    rel="stylesheet"
+    href="/subshell/assets/site.css">
+
+  <script
+    src="/subshell/assets/site.js"
+    defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">
+    Skip to content
+  </a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+
+      <a
+        class="brand"
+        href="/subshell/"
+        aria-label="subshell home">
+
+        <img
+          class="brand-logo"
+          src="/subshell/assets/subshell-mark.svg"
+          width="42"
+          height="42"
+          alt="">
+
+        <strong>subshell</strong>
+      </a>
+
+      <nav
+        class="nav"
+        aria-label="Primary navigation">
+
+        <a href="/subshell/#features">
+          Features
+        </a>
+
+        <a href="/subshell/get-started/" aria-current="page">
+          Get started
+        </a>
+
+        <a href="/subshell/faq/">
+          FAQ
+        </a>
+
+        <a href="/subshell/support/">
+          Support
+        </a>
+
+        <a href="https://github.com/brealorg/subshell">
+          GitHub
+        </a>
+
+        <button
+          class="palette-toggle"
+          id="palette-toggle"
+          type="button"
+          aria-pressed="false"
+          aria-label="Use dynamic device colour"
+          title="Use your device accent colour where supported">
+
+          <svg
+            class="palette-toggle-icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true">
+            <path
+              fill="currentColor"
+              d="M12 3a9 9 0 0 0 0 18h1.1a2.4 2.4 0 0 0 1.7-4.1l-.4-.4a1 1 0 0 1 .7-1.7H17A4 4 0 0 0 21 11c0-4.4-4-8-9-8Zm-4.4 9.2a1.35 1.35 0 1 1 0-2.7 1.35 1.35 0 0 1 0 2.7Zm2-4.1a1.35 1.35 0 1 1 0-2.7 1.35 1.35 0 0 1 0 2.7Zm4.8 0a1.35 1.35 0 1 1 0-2.7 1.35 1.35 0 0 1 0 2.7Zm2.3 4.1a1.35 1.35 0 1 1 0-2.7 1.35 1.35 0 0 1 0 2.7Z"/>
+          </svg>
+
+          <span class="palette-toggle-label">
+            Dynamic colour
+          </span>
+
+          <span
+            class="palette-toggle-track"
+            aria-hidden="true">
+            <span class="palette-toggle-thumb"></span>
+          </span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="info-section">
+      <div class="shell">
+
+        <article class="info-surface">
+
+          <header class="info-header">
+            <p class="info-eyebrow">
+              Guide
+            </p>
+
+            <h1>
+              Get started
+            </h1>
+
+            <p class="info-lede">
+              Install the beta, get your Reddit Client ID once, and sign in. About ten minutes.
+            </p>
+
+            <div class="info-meta">
+              <span>Android 8.0+</span>
+              <span>About ten minutes</span>
+            </div>
+          </header>
+
+          <div class="info-content">
+            <section>
+              <h2>Before you start</h2>
+              <ul>
+                <li>An Android phone, tablet or foldable with Android 8.0 or newer.</li>
+                <li>A Reddit account.</li>
+                <li>About ten minutes. The Client ID step below is done once per installation.</li>
+              </ul>
+
+            </section>
+            <section>
+              <h2>1. Install the beta</h2>
+              <p>
+                Download the <code>Subshell-&lt;version&gt;.apk</code> file from the <a href="https://github.com/brealorg/subshell/releases/latest">latest GitHub release</a> and open it. Android asks you to allow installing apps from your browser or file manager the first time; allow it for that app only.
+              </p>
+              <p>
+                Each release also has a <code>.sha256</code> file. To check the download on a computer, compare it with <code>sha256sum Subshell-&lt;version&gt;.apk</code>. The in-app update dialog shows the same checksum.
+              </p>
+              <div class="info-callout">
+                <strong>Updates</strong>
+
+                <p>
+                  subshell checks for a new beta about twice a day and tells you when one is ready. It opens the release page; it never downloads or installs an APK by itself. Install the new APK over the old one to keep your settings and sign-in.
+                </p>
+              </div>
+
+            </section>
+            <section id="client-id">
+              <h2>2. Get your Reddit Client ID</h2>
+              <p>
+                Reddit only lets an app sign you in when it presents a Client ID. subshell does not ship a shared one, so you get your own once, through RedReader's sign-in, and paste it into subshell. The app walks you through the same steps.
+              </p>
+              <ol class="step-list">
+                <li>
+                  <strong>Install or open RedReader</strong>
+                  <span>RedReader is used once to create the Reddit authorization that gives you the Client ID subshell needs. It is on Google Play and F-Droid.</span>
+                </li>
+                <li>
+                  <strong>Sign in to Reddit in RedReader</strong>
+                  <span>Complete RedReader's normal Reddit sign-in and authorize it when Reddit asks.</span>
+                </li>
+                <li>
+                  <strong>Open Reddit's authorization email</strong>
+                  <span>Find the line labeled App ID. The value beside App ID is the Client ID you will paste into subshell.</span>
+                </li>
+                <li>
+                  <strong>Paste it into subshell</strong>
+                  <span>Choose <em>I already have a Client ID</em>, paste only the App ID value and tap <em>Save Client ID</em>.</span>
+                </li>
+              </ol>
+              <div class="info-callout">
+                <strong>Where it is kept</strong>
+
+                <p>
+                  Your Client ID is kept in encrypted no-backup storage on this device and isn't included in subshell settings backups.
+                </p>
+              </div>
+
+            </section>
+            <section>
+              <h2>3. Sign in</h2>
+              <p>
+                Tap <em>Connect Reddit</em>. Reddit's own sign-in page opens inside subshell; sign in and authorize. subshell keeps only the session Reddit hands back, never your password. You can add more accounts later from Settings and switch between them.
+              </p>
+
+            </section>
+            <section>
+              <h2>4. Make it yours</h2>
+              <ul>
+                <li>On first start subshell asks which side your thumb controls and floating buttons should favour.</li>
+                <li>Choose a backup folder outside the app, so your setup survives reinstalling. A folder named <em>subshell Backups</em> in Documents works well.</li>
+                <li>Optional: let Reddit links open in subshell. Android decides which apps open web links, so subshell takes you to the system page; turn on <em>Open supported links</em> and pick the Reddit addresses.</li>
+                <li>Settings is searchable and sorted by area: theme and text size, navigation and swipe actions, feeds and filters, video, comments, notifications and backups.</li>
+              </ul>
+
+            </section>
+            <section>
+              <h2>Stuck?</h2>
+              <p>
+                Read the <a href="/subshell/faq/">FAQ</a> or see <a href="/subshell/support/">Support</a>.
+              </p>
+
+            </section>
+
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+
+      <div class="footer-copy">
+        <strong>
+          subshell
+        </strong>
+
+        <p>
+          Independent Android client for Reddit.<br>
+          Not affiliated with, endorsed by, or sponsored by Reddit.
+        </p>
+      </div>
+
+      <nav
+        class="footer-links"
+        aria-label="Footer navigation">
+
+        <a href="/subshell/get-started/">
+          Get started
+        </a>
+
+        <a href="/subshell/changelog/">
+          What's new
+        </a>
+
+        <a href="/subshell/faq/">
+          FAQ
+        </a>
+
+        <a href="/subshell/privacy/">
+          Privacy
+        </a>
+
+        <a href="/subshell/security/">
+          Security
+        </a>
+
+        <a href="/subshell/support/">
+          Support
+        </a>
+
+        <a href="https://github.com/brealorg/subshell">
+          GitHub
+        </a>
+
+        <a href="https://www.reddit.com/r/subshell/">
+          r/subshell
+        </a>
+
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

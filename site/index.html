@@ -7,13 +7,10 @@
     name="viewport"
     content="width=device-width, initial-scale=1">
 
-  <meta
-    name="robots"
-    content="noindex, nofollow">
 
   <meta
     name="description"
-    content="subshell — an independent Android client for Reddit.">
+    content="subshell is an independent Android client for Reddit with a Material 3 interface: feeds, media, inbox, Direct Chat, moderation tools, filters and backups you own.">
 
   <meta
     name="color-scheme"
@@ -33,6 +30,8 @@
   <meta name="darkreader-lock">
 
   <title>subshell — Android client for Reddit</title>
+
+  <link rel="canonical" href="https://brealorg.github.io/subshell/">
 
   <link
     rel="icon"
@@ -86,8 +85,16 @@
         class="nav"
         aria-label="Primary navigation">
 
-        <a href="#beta">
-          Beta
+        <a href="/subshell/#features">
+          Features
+        </a>
+
+        <a href="/subshell/get-started/">
+          Get started
+        </a>
+
+        <a href="/subshell/faq/">
+          FAQ
         </a>
 
         <a href="/subshell/support/">
@@ -146,13 +153,8 @@
               subshell
             </h1>
 
-            <p class="hero-title">
-              Reddit on Android,<br>
-              your way.
-            </p>
-
             <p class="hero-description">
-              An independent Android client built for everyday Reddit use.
+              An independent Android client built for everyday Reddit use: reading, writing, chatting and moderating, with no ads and no tracking.
             </p>
 
             <div class="hero-actions">
@@ -165,19 +167,8 @@
 
               <a
                 class="button button-tonal"
-                href="https://github.com/brealorg/subshell">
-
-                <svg
-                  class="button-icon"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true">
-
-                  <path
-                    fill="currentColor"
-                    d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.21-3.37-1.21-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .08 1.53 1.06 1.53 1.06.9 1.56 2.35 1.11 2.92.85.09-.66.35-1.11.64-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.4 9.4 0 0 1 12 6.98a9.4 9.4 0 0 1 2.5.35c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.35 4.8-4.58 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.59.69.49A10.25 10.25 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z"/>
-                </svg>
-
-                GitHub
+                href="/subshell/get-started/">
+                Get started
               </a>
             </div>
           </div>
@@ -195,7 +186,7 @@
                 <span
                   id="gallery-counter"
                   aria-live="polite">
-                  1 / 4
+                  1 / 6
                 </span>
 
                 <button
@@ -243,8 +234,8 @@
 
                     <div class="gallery-shot gallery-shot-image">
                       <img
-                        src="/subshell/assets/screenshots/home.png"
-                        alt="Subshell Home feed showing a Reddit post with an image gallery."
+                        src="/subshell/assets/screenshots/home.webp"
+                        alt="subshell Home feed with a photo gallery post from r/norway."
                         width="921"
                         height="2048"
                         fetchpriority="high"
@@ -259,17 +250,92 @@
 
                 <figure
                   class="gallery-slide"
-                  data-gallery-title="Communities">
+                  data-gallery-title="Post">
                   <button
                     class="gallery-open"
                     type="button"
                     data-gallery-index="1"
+                    aria-label="Open Post screenshot fullscreen">
+
+                    <div class="gallery-shot gallery-shot-image">
+                      <img
+                        src="/subshell/assets/screenshots/post.webp"
+                        alt="An open post with its comments, sort and comment box."
+                        width="921"
+                        height="2048"
+                        loading="lazy"
+                        decoding="async">
+                    </div>
+                  </button>
+
+                  <figcaption>
+                    Post
+                  </figcaption>
+                </figure>
+
+                <figure
+                  class="gallery-slide"
+                  data-gallery-title="Viewer">
+                  <button
+                    class="gallery-open"
+                    type="button"
+                    data-gallery-index="2"
+                    aria-label="Open Viewer screenshot fullscreen">
+
+                    <div class="gallery-shot gallery-shot-image">
+                      <img
+                        src="/subshell/assets/screenshots/viewer.webp"
+                        alt="The full-screen image viewer with share and save."
+                        width="921"
+                        height="2048"
+                        loading="lazy"
+                        decoding="async">
+                    </div>
+                  </button>
+
+                  <figcaption>
+                    Viewer
+                  </figcaption>
+                </figure>
+
+                <figure
+                  class="gallery-slide"
+                  data-gallery-title="Community">
+                  <button
+                    class="gallery-open"
+                    type="button"
+                    data-gallery-index="3"
+                    aria-label="Open Community screenshot fullscreen">
+
+                    <div class="gallery-shot gallery-shot-image">
+                      <img
+                        src="/subshell/assets/screenshots/community.webp"
+                        alt="The r/space community page with its banner, description and sort menu."
+                        width="921"
+                        height="2048"
+                        loading="lazy"
+                        decoding="async">
+                    </div>
+                  </button>
+
+                  <figcaption>
+                    Community
+                  </figcaption>
+                </figure>
+
+                <figure
+                  class="gallery-slide"
+                  data-gallery-title="Communities">
+                  <button
+                    class="gallery-open"
+                    type="button"
+                    data-gallery-index="4"
                     aria-label="Open Communities screenshot fullscreen">
 
                     <div class="gallery-shot gallery-shot-image">
                       <img
-                        src="/subshell/assets/screenshots/communities.png"
-                        alt="Subshell Communities screen showing favorites and joined communities."
+                        src="/subshell/assets/screenshots/communities.webp"
+                        alt="Communities with favorites, joined, recent and custom feeds."
                         width="921"
                         height="2048"
                         loading="lazy"
@@ -284,17 +350,17 @@
 
                 <figure
                   class="gallery-slide"
-                  data-gallery-title="Inbox">
+                  data-gallery-title="Settings">
                   <button
                     class="gallery-open"
                     type="button"
-                    data-gallery-index="2"
-                    aria-label="Open Inbox screenshot fullscreen">
+                    data-gallery-index="5"
+                    aria-label="Open Settings screenshot fullscreen">
 
                     <div class="gallery-shot gallery-shot-image">
                       <img
-                        src="/subshell/assets/screenshots/inbox.png"
-                        alt="Subshell Inbox screen with sanitized example notifications."
+                        src="/subshell/assets/screenshots/settings.webp"
+                        alt="Settings, searchable and grouped by area."
                         width="921"
                         height="2048"
                         loading="lazy"
@@ -303,32 +369,7 @@
                   </button>
 
                   <figcaption>
-                    Inbox
-                  </figcaption>
-                </figure>
-
-                <figure
-                  class="gallery-slide"
-                  data-gallery-title="Library">
-                  <button
-                    class="gallery-open"
-                    type="button"
-                    data-gallery-index="3"
-                    aria-label="Open Library screenshot fullscreen">
-
-                    <div class="gallery-shot gallery-shot-image">
-                      <img
-                        src="/subshell/assets/screenshots/library.png"
-                        alt="Subshell You screen with the Library tab and Saved content selected."
-                        width="921"
-                        height="2048"
-                        loading="lazy"
-                        decoding="async">
-                    </div>
-                  </button>
-
-                  <figcaption>
-                    Library
+                    Settings
                   </figcaption>
                 </figure>
 
@@ -358,19 +399,237 @@
               <button
                 type="button"
                 data-gallery-go="1"
-                aria-label="Go to Communities screenshot"></button>
+                aria-label="Go to Post screenshot"></button>
 
               <button
                 type="button"
                 data-gallery-go="2"
-                aria-label="Go to Inbox screenshot"></button>
+                aria-label="Go to Viewer screenshot"></button>
 
               <button
                 type="button"
                 data-gallery-go="3"
-                aria-label="Go to Library screenshot"></button>
+                aria-label="Go to Community screenshot"></button>
+
+              <button
+                type="button"
+                data-gallery-go="4"
+                aria-label="Go to Communities screenshot"></button>
+
+              <button
+                type="button"
+                data-gallery-go="5"
+                aria-label="Go to Settings screenshot"></button>
 
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase-section" id="features">
+      <div class="shell">
+        <header class="section-header">
+          <p class="eyebrow">Features</p>
+          <h2>Reddit, the Android way.</h2>
+          <p>Reading, watching, writing and moderating, in an app that follows Android's own design.</p>
+        </header>
+
+        <div class="showcase-tabs" role="tablist" aria-label="Features">
+          <button
+            type="button"
+            role="tab" class="active"
+            id="showcase-tab-0"
+            aria-controls="showcase-slide-0"
+            aria-selected="true"
+            data-showcase-go="0">Reading</button>
+          <button
+            type="button"
+            role="tab"
+            id="showcase-tab-1"
+            aria-controls="showcase-slide-1"
+            aria-selected="false"
+            data-showcase-go="1">Media</button>
+          <button
+            type="button"
+            role="tab"
+            id="showcase-tab-2"
+            aria-controls="showcase-slide-2"
+            aria-selected="false"
+            data-showcase-go="2">Communities</button>
+          <button
+            type="button"
+            role="tab"
+            id="showcase-tab-3"
+            aria-controls="showcase-slide-3"
+            aria-selected="false"
+            data-showcase-go="3">Settings</button>
+        </div>
+
+        <div class="gallery-shell showcase-shell">
+          <button
+            class="gallery-nav-button gallery-prev"
+            id="showcase-prev"
+            type="button"
+            aria-label="Previous feature">
+            <span aria-hidden="true">&lsaquo;</span>
+          </button>
+
+          <div class="showcase-track" id="showcase-track">
+          <article
+            class="showcase-slide"
+            id="showcase-slide-0"
+            role="tabpanel"
+            aria-labelledby="showcase-tab-0">
+            <figure class="showcase-shot">
+              <img
+                src="/subshell/assets/screenshots/post.webp"
+                alt="An open post with its comments, sort and comment box."
+                width="921"
+                height="2048"
+                loading="eager"
+                decoding="async">
+            </figure>
+
+            <div class="showcase-copy">
+              <h3>Built for reading.</h3>
+              <p>Feeds that remember your place, threads that load replies by themselves, and comments that stay readable on any screen.</p>
+              <ul>
+                <li>Unread markers and highlighted new comments</li>
+                <li>Find in thread and jump between top-level comments</li>
+                <li>Swipe actions and vote controls the way you like them</li>
+              </ul>
+            </div>
+          </article>
+          <article
+            class="showcase-slide"
+            id="showcase-slide-1"
+            role="tabpanel"
+            aria-labelledby="showcase-tab-1">
+            <figure class="showcase-shot">
+              <img
+                src="/subshell/assets/screenshots/viewer.webp"
+                alt="The full-screen image viewer with share and save."
+                width="921"
+                height="2048"
+                loading="lazy"
+                decoding="async">
+            </figure>
+
+            <div class="showcase-copy">
+              <h3>Photos and video, done properly.</h3>
+              <p>Galleries, a full-screen viewer and Reddit video that adapts to your connection.</p>
+              <ul>
+                <li>Share and save images in one tap</li>
+                <li>Video quality per network, subtitles and audio language</li>
+                <li>Optional speed, double-tap skip and picture-in-picture</li>
+              </ul>
+            </div>
+          </article>
+          <article
+            class="showcase-slide"
+            id="showcase-slide-2"
+            role="tabpanel"
+            aria-labelledby="showcase-tab-2">
+            <figure class="showcase-shot">
+              <img
+                src="/subshell/assets/screenshots/community.webp"
+                alt="The r/space community page with its banner, description and sort menu."
+                width="921"
+                height="2048"
+                loading="lazy"
+                decoding="async">
+            </figure>
+
+            <div class="showcase-copy">
+              <h3>Your communities, your rules.</h3>
+              <p>Favorites, custom feeds and recent communities close at hand, and the tools to keep the rest out of the way.</p>
+              <ul>
+                <li>Join, favorite, mute for a while or hide</li>
+                <li>Content filters for words, users, domains and flair</li>
+                <li>Community info, rules and wiki without leaving the app</li>
+              </ul>
+            </div>
+          </article>
+          <article
+            class="showcase-slide"
+            id="showcase-slide-3"
+            role="tabpanel"
+            aria-labelledby="showcase-tab-3">
+            <figure class="showcase-shot">
+              <img
+                src="/subshell/assets/screenshots/settings.webp"
+                alt="Settings, searchable and grouped by area."
+                width="921"
+                height="2048"
+                loading="lazy"
+                decoding="async">
+            </figure>
+
+            <div class="showcase-copy">
+              <h3>Make it yours.</h3>
+              <p>Searchable settings, grouped the way you think about them, with defaults that follow Android.</p>
+              <ul>
+                <li>Follows your light or dark theme, with dynamic colour and pure black</li>
+                <li>Left- or right-handed controls and navigation</li>
+                <li>Backups to a folder you own, and an optional app lock</li>
+              </ul>
+            </div>
+          </article>
+          </div>
+
+          <button
+            class="gallery-nav-button gallery-next"
+            id="showcase-next"
+            type="button"
+            aria-label="Next feature">
+            <span aria-hidden="true">&rsaquo;</span>
+          </button>
+        </div>
+
+        <div class="also-strip" aria-label="Also in subshell">
+          <strong>Also in subshell</strong>
+          <span>Direct Chat</span>
+          <span>Inbox notifications</span>
+          <span>Modmail and mod tools</span>
+          <span>Several accounts</span>
+          <span>Tablets and foldables</span>
+          <span>Saved searches</span>
+          <span>Share into subshell</span>
+          <span>No ads, no tracking</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="start-section" id="start">
+      <div class="shell start-grid">
+        <div class="start-surface">
+          <p class="eyebrow">Get started</p>
+          <h2>Up and running in three steps.</h2>
+          <ol class="step-list">
+            <li><strong>Install the APK</strong><span>Download the signed beta from GitHub Releases.</span></li>
+            <li><strong>Get a Client ID</strong><span>Once, through RedReader's Reddit sign-in. The app shows you how.</span></li>
+            <li><strong>Sign in</strong><span>On Reddit's own page. Add more accounts any time.</span></li>
+          </ol>
+          <div class="hero-actions">
+            <a class="button button-filled" href="/subshell/get-started/">Read the guide</a>
+            <a class="button button-tonal" href="/subshell/faq/">FAQ</a>
+          </div>
+        </div>
+
+        <div class="start-surface news-surface">
+          <!-- RELEASETOOL02_WHATS_NEW_START -->
+          <p class="eyebrow">What's new in 0.79-beta</p>
+          <h2>Saved searches, RedGIFs in the app, Reddit favorites sync and a full review of the code.</h2>
+          <ul>
+            <li>New: saved searches in the Search hub, an optional scroll position indicator, RedGIFs clips in the app (with Show NSFW posts) and favorites synced with Reddit.</li>
+            <li>Reddit emotes, GIFs and images show inline in posts and comments and can be edited; spoilers stay hidden until tapped; escapes, nested styles and lists render right.</li>
+            <li>Safer writing: a post, comment, message or moderator action whose answer was lost is checked with Reddit instead of sent twice, and drafts survive restarts.</li>
+            <li>Accounts stay apart: votes, scroll positions, lists and notifications no longer cross between accounts; a notification for another account switches to it.</li>
+          </ul>
+          <!-- RELEASETOOL02_WHATS_NEW_END -->
+          <div class="hero-actions">
+            <a class="button button-tonal" href="/subshell/changelog/">All changes</a>
           </div>
         </div>
       </div>
@@ -441,6 +700,18 @@
         class="footer-links"
         aria-label="Footer navigation">
 
+        <a href="/subshell/get-started/">
+          Get started
+        </a>
+
+        <a href="/subshell/changelog/">
+          What's new
+        </a>
+
+        <a href="/subshell/faq/">
+          FAQ
+        </a>
+
         <a href="/subshell/privacy/">
           Privacy
         </a>
@@ -460,6 +731,7 @@
         <a href="https://www.reddit.com/r/subshell/">
           r/subshell
         </a>
+
       </nav>
     </div>
   </footer>
@@ -475,7 +747,7 @@
       </strong>
 
       <span id="gallery-dialog-counter">
-        1 / 4
+        1 / 6
       </span>
 
       <button

@@ -84,9 +84,10 @@ jobs:
                   f"Expected at least four CSS references; found {css_refs}"
               )
 
-          if js_refs != 4:
+          # PUBLIC02_SITE_REFRESH_V1: every page loads the palette toggle script.
+          if js_refs < 4:
               raise SystemExit(
-                  f"Expected exactly four JS references; found {js_refs}"
+                  f"Expected at least four JS references; found {js_refs}"
               )
 
           print(f"ASSET_REVISION={revision}")

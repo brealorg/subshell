@@ -7,13 +7,10 @@
     name="viewport"
     content="width=device-width, initial-scale=1">
 
-  <meta
-    name="robots"
-    content="noindex, nofollow">
 
   <meta
     name="description"
-    content="Security reporting and supported-build information for subshell.">
+    content="How to report a vulnerability and check a subshell download.">
 
   <meta
     name="color-scheme"
@@ -32,6 +29,8 @@
   <meta name="darkreader-lock">
 
   <title>Security — subshell</title>
+
+  <link rel="canonical" href="https://brealorg.github.io/subshell/support/">
 
   <link
     rel="icon"
@@ -82,8 +81,16 @@
         class="nav"
         aria-label="Primary navigation">
 
-        <a href="/subshell/#beta">
-          Beta
+        <a href="/subshell/#features">
+          Features
+        </a>
+
+        <a href="/subshell/get-started/">
+          Get started
+        </a>
+
+        <a href="/subshell/faq/">
+          FAQ
         </a>
 
         <a href="/subshell/support/">
@@ -141,67 +148,51 @@
             </h1>
 
             <p class="info-lede">
-              How to report a vulnerability without exposing sensitive details.
+              How to report a vulnerability without exposing sensitive details, and how to check a download.
             </p>
           </header>
 
           <div class="info-content">
-            <section>
               <div class="info-callout">
                 <strong>Do not report vulnerabilities publicly.</strong>
 
                 <p>
-                  Use GitHub's private vulnerability reporting so details
-                  are not exposed in the public issue tracker.
+                  Use GitHub's private vulnerability reporting so details are not exposed in the public issue tracker.
                 </p>
               </div>
-
               <div class="info-actions">
                 <a
                   class="button button-filled"
-                  href="https://github.com/brealorg/subshell/security/advisories/new"
-                  rel="noreferrer noopener">
+                  href="https://github.com/brealorg/subshell/security/advisories/new">
                   Report a vulnerability privately
                 </a>
               </div>
-            </section>
-
             <section>
               <h2>What to include</h2>
-
               <p>
-                Provide enough information to reproduce and assess the
-                issue, including affected Subshell version, Android
-                version and relevant steps.
+                Enough to reproduce and assess the issue: the subshell version, Android version and the steps.
+              </p>
+              <p>
+                Do not include Reddit credentials, OAuth access or refresh tokens, cookies, passwords, private messages, signing material or other personal account data.
               </p>
 
-              <p>
-                Do not include Reddit credentials, OAuth access or
-                refresh tokens, cookies, passwords, private messages,
-                signing material or other personal account data.
-              </p>
             </section>
-
             <section>
               <h2>Supported builds</h2>
-
               <p>
-                Before the first public beta there is no publicly
-                supported Subshell build. After beta publication,
-                security fixes target the newest public beta or release
-                unless the release notes explicitly state otherwise.
+                Security fixes target the <a href="https://github.com/brealorg/subshell/releases/latest">newest public beta</a> unless the release notes say otherwise.
               </p>
+
             </section>
-
             <section>
-              <h2>Release authenticity</h2>
-
+              <h2>Checking a download</h2>
               <p>
-                Public Android builds are distributed through GitHub
-                Releases using the established Stable signing identity.
-                Release assets include an SHA-256 sidecar so the exact APK
-                can be checked after download.
+                Every release is signed with the same release key and published on GitHub Releases with three files: the APK, a <code>.sha256</code> checksum and a release record (source commit, checks run, signing certificate digest). Compare the checksum before installing; the in-app update dialog shows the same value.
               </p>
+              <p>
+                Android refuses to install an update signed with a different key, so an installed subshell only accepts genuine updates.
+              </p>
+
             </section>
 
           </div>
@@ -228,6 +219,18 @@
         class="footer-links"
         aria-label="Footer navigation">
 
+        <a href="/subshell/get-started/">
+          Get started
+        </a>
+
+        <a href="/subshell/changelog/">
+          What's new
+        </a>
+
+        <a href="/subshell/faq/">
+          FAQ
+        </a>
+
         <a href="/subshell/privacy/">
           Privacy
         </a>
@@ -247,6 +250,7 @@
         <a href="https://www.reddit.com/r/subshell/">
           r/subshell
         </a>
+
       </nav>
     </div>
   </footer>
