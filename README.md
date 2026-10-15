@@ -3,7 +3,7 @@
 **An independent Android client for Reddit**, built for everyday Reddit use:
 reading, writing, chatting and moderating, with no ads and no tracking.
 
-**[Download the current public beta (0.79-beta)](https://github.com/brealorg/subshell/releases/tag/v0.79-beta)** ·
+**[Download the current public beta (0.80-beta)](https://github.com/brealorg/subshell/releases/tag/v0.80-beta)** ·
 [Get started](https://brealorg.github.io/subshell/get-started/) ·
 [Website](https://brealorg.github.io/subshell/) ·
 [FAQ](https://brealorg.github.io/subshell/faq/) ·
@@ -62,7 +62,7 @@ Searchable settings, grouped the way you think about them, with defaults that fo
 
 ## Get started
 
-1. **Install the APK.** Download the signed beta from [GitHub Releases](https://github.com/brealorg/subshell/releases/tag/v0.79-beta).
+1. **Install the APK.** Download the signed beta from [GitHub Releases](https://github.com/brealorg/subshell/releases/tag/v0.80-beta).
    Each release has a `.sha256` checksum and a release record so the APK can be verified.
 2. **Get a Client ID.** Once, through RedReader's Reddit sign-in. The app shows you how;
    the [guide](https://brealorg.github.io/subshell/get-started/) has the same steps.
@@ -72,14 +72,14 @@ Android 8.0 or newer. subshell checks for new betas itself and opens the release
 page; it never installs anything on its own.
 
 <!-- RELEASETOOL02_WHATS_NEW_START -->
-## What's new in 0.79-beta
+## What's new in 0.80-beta
 
-Saved searches, RedGIFs in the app, Reddit favorites sync and a full review of the code.
+Material 3 throughout, a new video player and better accessibility
 
-- New: saved searches in the Search hub, an optional scroll position indicator, RedGIFs clips in the app (with Show NSFW posts) and favorites synced with Reddit.
-- Reddit emotes, GIFs and images show inline in posts and comments and can be edited; spoilers stay hidden until tapped; escapes, nested styles and lists render right.
-- Safer writing: a post, comment, message or moderator action whose answer was lost is checked with Reddit instead of sent twice, and drafts survive restarts.
-- Accounts stay apart: votes, scroll positions, lists and notifications no longer cross between accounts; a notification for another account switches to it.
+- Material 3 throughout: one top bar per screen, a navigation rail on tablets and foldables, list rows and segmented choices in Settings.
+- Video: a new seek bar with live frames, playback options in post and full screen, speed, double-tap skip, hold for 2x and picture-in-picture (each optional).
+- Wi-Fi only autoplay now really holds autoplay on mobile data; playing video keeps the screen on, and unplugging headphones pauses.
+- A Video group in Settings: subtitles, audio language, timeline size, quality and where the playback options show.
 
 [All release notes](https://brealorg.github.io/subshell/changelog/)
 <!-- RELEASETOOL02_WHATS_NEW_END -->
