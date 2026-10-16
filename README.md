@@ -3,7 +3,7 @@
 **An independent Android client for Reddit**, built for everyday Reddit use:
 reading, writing, chatting and moderating, with no ads and no tracking.
 
-**[Download the current public beta (0.81-beta)](https://github.com/brealorg/subshell/releases/tag/v0.81-beta)** ·
+**[Download the current public beta (0.82-beta)](https://github.com/brealorg/subshell/releases/tag/v0.82-beta)** ·
 [Get started](https://brealorg.github.io/subshell/get-started/) ·
 [Website](https://brealorg.github.io/subshell/) ·
 [FAQ](https://brealorg.github.io/subshell/faq/) ·
@@ -62,7 +62,7 @@ Searchable settings, grouped the way you think about them, with defaults that fo
 
 ## Get started
 
-1. **Install the APK.** Download the signed beta from [GitHub Releases](https://github.com/brealorg/subshell/releases/tag/v0.81-beta).
+1. **Install the APK.** Download the signed beta from [GitHub Releases](https://github.com/brealorg/subshell/releases/tag/v0.82-beta).
    Each release has a `.sha256` checksum and a release record so the APK can be verified.
 2. **Get a Client ID.** Once, through RedReader's Reddit sign-in. The app shows you how;
    the [guide](https://brealorg.github.io/subshell/get-started/) has the same steps.
@@ -72,14 +72,14 @@ Android 8.0 or newer. subshell checks for new betas itself and opens the release
 page; it never installs anything on its own.
 
 <!-- RELEASETOOL02_WHATS_NEW_START -->
-## What's new in 0.81-beta
+## What's new in 0.82-beta
 
-Feed videos keep their shape
+A new comment composer, a smaller app and open source
 
-- Fixed: tall and very wide videos in the feed were stretched and cut off at the edge while playing.
-- Mention people in comments: type @ or u/ for people from the thread, then Reddit's people search.
-- Subshell checks for updates when you come back to it, so a new release shows up within the hour.
-- The update dialog can turn on update notifications if Android has them switched off.
+- Replying is rebuilt: a quick reply card sits on the keyboard, and Expand opens a full-screen editor with formatting and a preview of your comment.
+- subshell is about two-thirds smaller (7.5 MB instead of 24.6 MB) and starts more evenly, thanks to code shrinking and a startup profile.
+- If subshell closes unexpectedly, the next start offers to send a diagnostic report. Nothing leaves your phone unless you choose to send it.
+- subshell's source code is now public under GPL-3.0, one snapshot per release, at github.com/brealorg/subshell-source-public.
 
 [All release notes](https://brealorg.github.io/subshell/changelog/)
 <!-- RELEASETOOL02_WHATS_NEW_END -->
