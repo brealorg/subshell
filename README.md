@@ -107,8 +107,9 @@ and logs.
 This repository is the public project, release, documentation,
 issue-tracking, and website home for subshell.
 
-The Android application source code is **not published in this repository
-at this stage**.
+The Android application source code is published separately in [brealorg/subshell-source-public](https://github.com/brealorg/subshell-source-public),
+one snapshot per release, under the GNU General Public License v3.0 or later.
+That repository is read-only; report bugs and ideas here.
 
 Public APKs are published only after passing the project's release
 qualification and signing gates.
