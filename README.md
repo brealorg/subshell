@@ -3,7 +3,7 @@
 **An independent Android client for Reddit**, built for everyday Reddit use:
 reading, writing, chatting and moderating, with no ads and no tracking.
 
-**[Download the current public beta (0.82-beta)](https://github.com/brealorg/subshell/releases/tag/v0.82-beta)** ·
+**[Download the current public beta (0.83-beta)](https://github.com/brealorg/subshell/releases/tag/v0.83-beta)** ·
 [Get started](https://brealorg.github.io/subshell/get-started/) ·
 [Website](https://brealorg.github.io/subshell/) ·
 [FAQ](https://brealorg.github.io/subshell/faq/) ·
@@ -62,7 +62,7 @@ Searchable settings, grouped the way you think about them, with defaults that fo
 
 ## Get started
 
-1. **Install the APK.** Download the signed beta from [GitHub Releases](https://github.com/brealorg/subshell/releases/tag/v0.82-beta).
+1. **Install the APK.** Download the signed beta from [GitHub Releases](https://github.com/brealorg/subshell/releases/tag/v0.83-beta).
    Each release has a `.sha256` checksum and a release record so the APK can be verified.
 2. **Get a Client ID.** Once, through RedReader's Reddit sign-in. The app shows you how;
    the [guide](https://brealorg.github.io/subshell/get-started/) has the same steps.
@@ -72,14 +72,14 @@ Android 8.0 or newer. subshell checks for new betas itself and opens the release
 page; it never installs anything on its own.
 
 <!-- RELEASETOOL02_WHATS_NEW_START -->
-## What's new in 0.82-beta
+## What's new in 0.83-beta
 
-A new comment composer, a smaller app and open source
+Choose how posts look, pinned posts first, and pinch to zoom videos
 
-- Replying is rebuilt: a quick reply card sits on the keyboard, and Expand opens a full-screen editor with formatting and a preview of your comment.
-- subshell is about two-thirds smaller (7.5 MB instead of 24.6 MB) and starts more evenly, thanks to code shrinking and a startup profile.
-- If subshell closes unexpectedly, the next start offers to send a diagnostic report. Nothing leaves your phone unless you choose to send it.
-- subshell's source code is now public under GPL-3.0, one snapshot per release, at github.com/brealorg/subshell-source-public.
+- Choose how posts look: Large, Compact, List or Grid, from the view button beside the feed (and in Settings).
+- A community's pinned posts now come first in every sort, as cards or as compact highlights.
+- Pinch to zoom videos in the full-screen player (turn it on in Settings).
+- A fresh look: Google's Material Symbols icons, Material 3 Expressive motion, and dynamic colour on by default.
 
 [All release notes](https://brealorg.github.io/subshell/changelog/)
 <!-- RELEASETOOL02_WHATS_NEW_END -->
