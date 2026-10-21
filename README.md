@@ -3,7 +3,7 @@
 **An independent Android client for Reddit**, built for everyday Reddit use:
 reading, writing, chatting and moderating, with no ads and no tracking.
 
-**[Download the current public beta (0.83-beta)](https://github.com/brealorg/subshell/releases/tag/v0.83-beta)** ·
+**[Download the current public beta (0.84-beta)](https://github.com/brealorg/subshell/releases/tag/v0.84-beta)** ·
 [Get started](https://brealorg.github.io/subshell/get-started/) ·
 [Website](https://brealorg.github.io/subshell/) ·
 [FAQ](https://brealorg.github.io/subshell/faq/) ·
@@ -62,7 +62,7 @@ Searchable settings, grouped the way you think about them, with defaults that fo
 
 ## Get started
 
-1. **Install the APK.** Download the signed beta from [GitHub Releases](https://github.com/brealorg/subshell/releases/tag/v0.83-beta).
+1. **Install the APK.** Download the signed beta from [GitHub Releases](https://github.com/brealorg/subshell/releases/tag/v0.84-beta).
    Each release has a `.sha256` checksum and a release record so the APK can be verified.
 2. **Get a Client ID.** Once, through RedReader's Reddit sign-in. The app shows you how;
    the [guide](https://brealorg.github.io/subshell/get-started/) has the same steps.
@@ -72,14 +72,14 @@ Android 8.0 or newer. subshell checks for new betas itself and opens the release
 page; it never installs anything on its own.
 
 <!-- RELEASETOOL02_WHATS_NEW_START -->
-## What's new in 0.83-beta
+## What's new in 0.84-beta
 
-Choose how posts look, pinned posts first, and pinch to zoom videos
+New-post notifications, text selection and one sign-in for everything
 
-- Choose how posts look: Large, Compact, List or Grid, from the view button beside the feed (and in Settings).
-- A community's pinned posts now come first in every sort, as cards or as compact highlights.
-- Pinch to zoom videos in the full-screen player (turn it on in Settings).
-- A fresh look: Google's Material Symbols icons, Material 3 Expressive motion, and dynamic colour on by default.
+- Get a notification when a community you choose has a new post: "Notify about new posts" in the community's ⋮ menu (up to 10 communities).
+- Long press to select and copy text in posts, comments and messages, with Android's Copy, Share and Translate.
+- Sign-in asks for every permission once. Modmail, mod log and the wiki no longer ask again (accounts signed in before approve one more time).
+- If sign-in stops working because Reddit or RedReader changed something, you can edit the redirect URI and user agent yourself, in Settings or during setup.
 
 [All release notes](https://brealorg.github.io/subshell/changelog/)
 <!-- RELEASETOOL02_WHATS_NEW_END -->
