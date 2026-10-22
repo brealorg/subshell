@@ -190,6 +190,13 @@
                 Every release is signed with the same release key and published on GitHub Releases with three files: the APK, a <code>.sha256</code> checksum and a release record (source commit, checks run, signing certificate digest). Compare the checksum before installing; the in-app update dialog shows the same value.
               </p>
               <p>
+                The checksum sits in the same release as the APK, so it only shows that the download is not damaged. To check that an APK is really signed by subshell, compare its signing certificate with this SHA-256 fingerprint, which is published here and in the README, outside the release:
+              </p>
+              <p><code class="fingerprint">52:E9:62:E7:41:2E:25:DA:80:1E:0A:39:06:E0:BF:B4:39:90:0A:1A:A1:5B:A9:F9:3C:95:B4:99:55:BA:F5:84</code></p>
+              <p>
+                On a computer, <code>apksigner verify --print-certs Subshell-&lt;version&gt;.apk</code> (Android SDK build-tools) prints it as <code>Signer #1 certificate SHA-256 digest</code>, in lower case without colons. On the phone, the AppVerifier app checks it before you install.
+              </p>
+              <p>
                 Android refuses to install an update signed with a different key, so an installed subshell only accepts genuine updates.
               </p>
 

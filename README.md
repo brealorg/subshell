@@ -64,6 +64,13 @@ Searchable settings, grouped the way you think about them, with defaults that fo
 
 1. **Install the APK.** Download the signed beta from [GitHub Releases](https://github.com/brealorg/subshell/releases/tag/v0.84-beta).
    Each release has a `.sha256` checksum and a release record so the APK can be verified.
+   The checksum sits next to the APK, so it only catches a damaged download. To check that the APK
+   is really signed by subshell, compare its signing certificate with this SHA-256 fingerprint:
+
+   `52:E9:62:E7:41:2E:25:DA:80:1E:0A:39:06:E0:BF:B4:39:90:0A:1A:A1:5B:A9:F9:3C:95:B4:99:55:BA:F5:84`
+
+   On a computer: `apksigner verify --print-certs Subshell-<version>.apk` (Android SDK build-tools)
+   prints it as `Signer #1 certificate SHA-256 digest`. On the phone, the AppVerifier app checks it.
 2. **Get a Client ID.** Once, through RedReader's Reddit sign-in. The app shows you how;
    the [guide](https://brealorg.github.io/subshell/get-started/) has the same steps.
 3. **Sign in** on Reddit's own page. Add more accounts any time.
