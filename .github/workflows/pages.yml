@@ -28,7 +28,12 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        # SECAUDIT19_ACTIONS_PINNED_BY_SHA_V1: actions are pinned to commit
+        # SHAs (a moved tag cannot run with pages/id-token write); the comment
+        # names the release the SHA was on.
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false
 
       # PUBLIC01C12_ALL_HTML_ASSET_CACHE_BUST_V1
       - name: Version static assets
@@ -102,13 +107,13 @@ jobs:
           grep -Fq             "/subshell/assets/site.js?v=${REVISION}"             site/index.html
 
       - name: Configure Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5.0.0
 
       - name: Upload site
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
         with:
           path: site
 
       - name: Deploy Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4.0.5
