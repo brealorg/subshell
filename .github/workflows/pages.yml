@@ -106,6 +106,38 @@ jobs:
 
           grep -Fq             "/subshell/assets/site.js?v=${REVISION}"             site/index.html
 
+      # SECAUDIT27_SITE_PAGES_CARRY_A_CSP_V1: every page carries a meta
+      # Content-Security-Policy, and every inline script is allowed by its
+      # sha256 there; an edited script would otherwise be blocked silently.
+      - name: Check Content-Security-Policy
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import base64, hashlib, re
+
+          pages = sorted(Path("site").rglob("*.html"))
+          for path in pages:
+              text = path.read_text(encoding="utf-8")
+              policies = re.findall(
+                  r'<meta http-equiv="Content-Security-Policy" content="([^"]*)">',
+                  text,
+              )
+              if len(policies) != 1:
+                  raise SystemExit(f"{path}: expected one CSP meta, found {len(policies)}")
+              policy = policies[0]
+              if "default-src 'none'" not in policy or "unsafe-inline" in policy:
+                  raise SystemExit(f"{path}: CSP must start from default-src 'none' without unsafe-inline")
+              first_script = text.find("<script")
+              if first_script != -1 and text.index("Content-Security-Policy") > first_script:
+                  raise SystemExit(f"{path}: CSP meta must come before the first script")
+              for script in re.findall(r"<script>(.*?)</script>", text, re.S):
+                  digest = base64.b64encode(hashlib.sha256(script.encode()).digest()).decode()
+                  if f"'sha256-{digest}'" not in policy:
+                      raise SystemExit(f"{path}: inline script sha256-{digest} is not in its CSP")
+          print(f"CSP_PAGES={len(pages)}")
+          PY
+
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5.0.0
 
