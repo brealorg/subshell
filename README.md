@@ -3,7 +3,7 @@
 **An independent Android client for Reddit**, built for everyday Reddit use:
 reading, writing, chatting and moderating, with no ads and no tracking.
 
-**[Download the current public beta (0.85-beta)](https://github.com/brealorg/subshell/releases/tag/v0.85-beta)** ·
+**[Download the current public beta (0.86-beta)](https://github.com/brealorg/subshell/releases/tag/v0.86-beta)** ·
 [Get started](https://brealorg.github.io/subshell/get-started/) ·
 [Website](https://brealorg.github.io/subshell/) ·
 [FAQ](https://brealorg.github.io/subshell/faq/) ·
@@ -62,7 +62,7 @@ Searchable settings, grouped the way you think about them, with defaults that fo
 
 ## Get started
 
-1. **Install the APK.** Download the signed beta from [GitHub Releases](https://github.com/brealorg/subshell/releases/tag/v0.85-beta).
+1. **Install the APK.** Download the signed beta from [GitHub Releases](https://github.com/brealorg/subshell/releases/tag/v0.86-beta).
    Each release has a `.sha256` checksum and a release record so the APK can be verified.
    The checksum sits next to the APK, so it only catches a damaged download. To check that the APK
    is really signed by subshell, compare its signing certificate with this SHA-256 fingerprint:
@@ -79,14 +79,14 @@ Android 8.0 or newer. subshell checks for new betas itself and opens the release
 page; it never installs anything on its own.
 
 <!-- RELEASETOOL02_WHATS_NEW_START -->
-## What's new in 0.85-beta
+## What's new in 0.86-beta
 
-A security update for sign-in, notifications and media
+Reply from notifications, RedGIFs with sound and a faster inbox
 
-- Signing out of an account now also removes Reddit's web login, unless another signed-in account still uses it.
-- The sign-in window opens only Reddit, Google and Apple pages, and a sign-in that fails is also withdrawn at Reddit.
-- Other apps can no longer open accounts or screens in subshell. Notifications from before the update just open the app.
-- With the app lock on, the recent-apps preview stays blank on Android 12 and older, and new-post notifications from hidden communities don't name them.
+- Private messages and chats arrive as conversation notifications, and you can reply right from the notification.
+- RedGIFs clips play with sound, videos pause the moment you switch tabs, and headset or Bluetooth buttons play and pause them.
+- The inbox refreshes several times faster, and messages you read elsewhere no longer count as unread.
+- You can post to your own profile, and galleries posted from the app show their images again.
 
 [All release notes](https://brealorg.github.io/subshell/changelog/)
 <!-- RELEASETOOL02_WHATS_NEW_END -->
