@@ -3,7 +3,7 @@
 **An independent Android client for Reddit**, built for everyday Reddit use:
 reading, writing, chatting and moderating, with no ads and no tracking.
 
-**[Download the current public beta (0.88-beta)](https://github.com/brealorg/subshell/releases/tag/v0.88-beta)** ·
+**[Download the current public beta (0.89-beta)](https://github.com/brealorg/subshell/releases/tag/v0.89-beta)** ·
 [Get started](https://brealorg.github.io/subshell/get-started/) ·
 [Website](https://brealorg.github.io/subshell/) ·
 [FAQ](https://brealorg.github.io/subshell/faq/) ·
@@ -62,7 +62,7 @@ Searchable settings, grouped the way you think about them, with defaults that fo
 
 ## Get started
 
-1. **Install the APK.** Download the signed beta from [GitHub Releases](https://github.com/brealorg/subshell/releases/tag/v0.88-beta).
+1. **Install the APK.** Download the signed beta from [GitHub Releases](https://github.com/brealorg/subshell/releases/tag/v0.89-beta).
    Each release has a `.sha256` checksum and a release record so the APK can be verified.
    The checksum sits next to the APK, so it only catches a damaged download. To check that the APK
    is really signed by subshell, compare its signing certificate with this SHA-256 fingerprint:
@@ -79,14 +79,14 @@ Android 8.0 or newer. subshell checks for new betas itself and opens the release
 page; it never installs anything on its own.
 
 <!-- RELEASETOOL02_WHATS_NEW_START -->
-## What's new in 0.88-beta
+## What's new in 0.89-beta
 
-Notifications behind a VPN and for new comments
+Replies, inbox and links load again
 
-- Notifications for messages and new posts now also arrive while a VPN is on for every app. Before, the background check waited for a network without a VPN.
-- Watched communities can also notify you about new comments: Settings › Notifications › New posts › Also new comments. Your own posts and comments never notify you.
-- If Reddit stops accepting the app's Client ID, subshell shows one notice that says what happened, what still works and where to set another one.
-- Long messages in the notice tray open in full with More, and the diagnostic report says when and how Reddit refused a request.
+- "More replies" load again in threads. Reddit started refusing the request subshell used, so replies now load through the thread itself.
+- Comments opened from the Inbox, from your profile and from links open again. Reddit also refused the post and comment lookups behind them.
+- Community icons, crossposts and edit or delete of your own posts and comments read through requests Reddit still answers.
+- Find in a thread now loads the rest of the thread before it searches. The diagnostic report shows how thread reads and Reddit's request limit went.
 
 [All release notes](https://brealorg.github.io/subshell/changelog/)
 <!-- RELEASETOOL02_WHATS_NEW_END -->
