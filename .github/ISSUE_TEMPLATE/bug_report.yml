@@ -79,19 +79,18 @@ body:
         2. If you can, do this right after the problem happened.
            Tap **Report a problem** (or **Create diagnostic report**).
         3. Read the preview. Then tap **Copy diagnostics** and paste it
-           below, or tap **Share report** and attach the `.txt` file to
-           this issue.
+           below, or tap **Share another way** and attach the `.txt` file
+           to this issue.
 
         Tip: **Open prefilled GitHub issue** on the same screen fills in your
-        version, Android version and device for you. Come back to the app
-        afterwards to copy the report.
+        version, Android version and device for you. Newer versions of
+        subshell also copy the report, so you only paste it here.
 
         The report becomes public with this issue. Look it over first, and
         leave it out if you would rather not share it.
       placeholder: |
-        subshell diagnostic report
-        schema=DIAG01A1_V1
-        ...
+        Paste the report here: long-press and choose Paste.
+        It starts with "subshell diagnostic report".
       render: text
 
   - type: textarea
