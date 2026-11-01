@@ -168,6 +168,12 @@
               </p>
             </details>
             <details class="faq-item">
+              <summary>Will subshell keep working after Reddit's API changes?</summary>
+              <p>
+                Reddit has said it will end API access for apps that are not registered with it from 12 January 2027. subshell is not registered, so from then on it may stop loading new posts and comments. What is already stored on your phone stays readable, and subshell will tell you plainly if Reddit refuses it. We will post what we know on <a href="https://www.reddit.com/r/subshell/">r/subshell</a>.
+              </p>
+            </details>
+            <details class="faq-item">
               <summary>How is my sign-in stored?</summary>
               <p>
                 You sign in on Reddit's own page. The resulting session is stored in app-private storage encrypted with the Android Keystore. It is never part of a settings backup, and logging out removes it.
@@ -176,7 +182,7 @@
             <details class="faq-item">
               <summary>Where do I get it, and how do updates work?</summary>
               <p>
-                During the beta subshell is a signed APK on <a href="https://github.com/brealorg/subshell/releases">GitHub Releases</a>. The app checks for a newer beta about twice a day, shows a notification and the release notes, and opens the release page. It never installs anything by itself.
+                subshell is a signed APK on <a href="https://github.com/brealorg/subshell/releases">GitHub Releases</a>. The app checks for a newer version about twice a day and shows a notice with the release notes. <em>Update</em> downloads the APK from the release, checks it against the published SHA-256 and hands it to Android's installer, which asks you first and refuses an APK signed by anyone else. Prefer Obtainium? The <em>Add to Obtainium</em> link on the home page does the same from GitHub.
               </p>
             </details>
             <details class="faq-item">

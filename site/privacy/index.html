@@ -153,7 +153,7 @@
             </p>
 
             <div class="info-meta">
-              <span>Effective 13 October 2026</span>
+              <span>Effective 1 November 2026</span>
               <span>Android + website</span>
             </div>
           </header>
@@ -183,7 +183,7 @@
                 <li><strong>Reddit's chat server</strong> (matrix.redditspace.com) while Direct Chat is open. It is not used in the background.</li>
                 <li><strong>Known image hosts</strong> for images linked in comments, such as Imgur, Giphy, Tenor and Wikimedia. Images from other hosts stay links until you open them.</li>
                 <li><strong>RedGIFs</strong> (api.redgifs.com) only when you play a RedGIFs clip, which is only possible while <em>Show NSFW posts</em> is on. Nothing is asked of RedGIFs otherwise.</li>
-                <li><strong>GitHub Pages</strong> to check for a new beta, about every 12 hours. The request carries no account or device identifier.</li>
+                <li><strong>GitHub Pages</strong> to check for a new version, about every 12 hours, and <strong>GitHub</strong> (github.com and its download server) when you tap <em>Update</em>. Neither request carries an account or device identifier.</li>
               </ul>
 
             </section>
@@ -195,9 +195,15 @@
 
             </section>
             <section>
+              <h2>Permissions</h2>
+              <p>
+                Notifications, to show inbox and update notices. <em>Install unknown apps</em>, asked once when you first tap <em>Update</em>, so Android lets subshell hand over its own update. Biometrics, only if you turn on the app lock.
+              </p>
+            </section>
+            <section>
               <h2>On your device</h2>
               <p>
-                For speed and offline reading the app keeps Reddit content, account details and settings in app-private storage. Diagnostics keep a local history of app events; a report is only created and shared when you choose to, and it contains no screenshots, typed text or Reddit content. Images you save go to <em>Download/subshell</em>.
+                For speed and offline reading the app keeps Reddit content, account details and settings in app-private storage. Diagnostics keep a local history of app events; a report is only created and shared when you choose to, and it contains no screenshots, typed text or Reddit content. Images you save go to <em>Download/subshell</em>. <em>Export your Reddit data</em> writes a ZIP there too; it holds your private messages, so treat it like them. Posts saved for offline stay in app-private storage until you clear them in Settings.
               </p>
               <p>
                 App lock, when you turn it on, uses Android's biometric or screen-lock prompt. subshell never sees your fingerprint, face or PIN.

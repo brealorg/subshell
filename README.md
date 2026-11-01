@@ -76,8 +76,9 @@ Searchable settings, grouped the way you think about them, with defaults that fo
    the [guide](https://brealorg.github.io/subshell/get-started/) has the same steps.
 3. **Sign in** on Reddit's own page. Add more accounts any time.
 
-Android 8.0 or newer. subshell checks for new betas itself and opens the release
-page; it never installs anything on its own.
+Android 8.0 or newer. subshell checks for new versions itself. Update in
+Settings › Updates downloads the release APK from GitHub, checks it against the
+published SHA-256 and hands it to Android, which asks you before it installs.
 
 <!-- RELEASETOOL02_WHATS_NEW_START -->
 ## What's new in 0.91-beta
@@ -121,6 +122,9 @@ That repository is read-only; report bugs and ideas here.
 
 Public APKs are published only after passing the project's release
 qualification and signing gates.
+
+subshell is written by one developer with help from AI coding tools; every change
+is reviewed and tested on a real phone before it ships.
 
 ## Independence
 
