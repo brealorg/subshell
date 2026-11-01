@@ -1,4 +1,4 @@
-# subshell
+# subshell for Reddit
 
 **An independent Android client for Reddit**, built for everyday Reddit use:
 reading, writing, chatting and moderating, with no ads and no tracking.
