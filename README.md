@@ -5,6 +5,7 @@ reading, writing, chatting and moderating, with no ads and no tracking.
 
 **[Download the current public beta (0.91-beta)](https://github.com/brealorg/subshell/releases/tag/v0.91-beta)** ·
 [Get started](https://brealorg.github.io/subshell/get-started/) ·
+[Add to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22io.github.brealorg.subshell%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fbrealorg%2Fsubshell%22%2C%22author%22%3A%22brealorg%22%2C%22name%22%3A%22subshell%22%2C%22additionalSettings%22%3A%22%7B%5C%22includePrereleases%5C%22%3Atrue%7D%22%7D) ·
 [Website](https://brealorg.github.io/subshell/) ·
 [FAQ](https://brealorg.github.io/subshell/faq/) ·
 [r/subshell](https://www.reddit.com/r/subshell/)
