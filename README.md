@@ -64,7 +64,7 @@ Searchable settings, grouped the way you think about them, with defaults that fo
 ## Get started
 
 1. **Install the APK.** Download the signed beta from [GitHub Releases](https://github.com/brealorg/subshell/releases/tag/v0.91-beta).
-   Each release has a `.sha256` checksum and a release record so the APK can be verified.
+   Each release has a `.sha256` checksum and a release record, so a damaged download shows up.
    The checksum sits next to the APK, so it only catches a damaged download. To check that the APK
    is really signed by subshell, compare its signing certificate with this SHA-256 fingerprint:
 
