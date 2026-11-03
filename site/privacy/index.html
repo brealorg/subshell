@@ -171,7 +171,7 @@
             <section>
               <h2>Signing in</h2>
               <p>
-                You sign in on Reddit's own page inside the app. The session is stored in app-private storage encrypted with the Android Keystore. Your Client ID is kept in encrypted no-backup storage. Neither is ever part of a settings backup, and Android's own cloud backup is turned off for subshell. Logging out removes the session for that account.
+                You sign in on Reddit's own page inside the app. The session is stored in app-private storage encrypted with the Android Keystore. Your Client ID is kept in encrypted no-backup storage. Neither is ever part of a settings backup, and Android's own cloud backup is turned off for subshell. When you sign in through Reddit's web page in the app, Reddit's web login is also kept in the app's private web storage so Direct Chat works. Logging out removes the session and that web login for that account.
               </p>
 
             </section>
@@ -179,7 +179,7 @@
               <h2>Who the app talks to</h2>
               <ul>
                 <li><strong>Reddit</strong> (oauth.reddit.com, www.reddit.com) for everything you read and do: feeds, posts, comments, votes, messages, moderation and account settings.</li>
-                <li><strong>Reddit's media servers</strong> (i.redd.it, v.redd.it, preview.redd.it and similar) for images and video.</li>
+                <li><strong>Reddit's media servers</strong> (i.redd.it, v.redd.it, preview.redd.it and similar) for images and video. Images and videos you post are uploaded to Reddit's media storage on Amazon S3 (reddit-uploaded-media.s3-accelerate.amazonaws.com).</li>
                 <li><strong>Reddit's chat server</strong> (matrix.redditspace.com) while Direct Chat is open. It is not used in the background.</li>
                 <li><strong>Known image hosts</strong> for images linked in comments, such as Imgur, Giphy, Tenor and Wikimedia. Images from other hosts stay links until you open them.</li>
                 <li><strong>RedGIFs</strong> (api.redgifs.com) only when you play a RedGIFs clip, which is only possible while <em>Show NSFW posts</em> is on. Nothing is asked of RedGIFs otherwise.</li>
