@@ -29,7 +29,7 @@ reading, writing, chatting and moderating, with no ads and no tracking.
 
 ### Built for reading.
 
-Feeds that remember your place, threads that load replies by themselves, and comments that stay readable on any screen.
+Feeds that keep your place when you open a post or switch accounts, threads that load replies by themselves, and comments that stay readable on any screen.
 
 - Unread markers and highlighted new comments
 - Find in thread and jump between top-level comments
