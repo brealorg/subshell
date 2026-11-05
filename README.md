@@ -3,7 +3,7 @@
 **An independent Android client for Reddit**, built for everyday Reddit use:
 reading, writing, chatting and moderating, with no ads and no tracking.
 
-**[Download the current public beta (0.91-beta)](https://github.com/brealorg/subshell/releases/tag/v0.91-beta)** ·
+**[Download the current public beta (0.92-beta)](https://github.com/brealorg/subshell/releases/tag/v0.92-beta)** ·
 [Get started](https://brealorg.github.io/subshell/get-started/) ·
 [Add to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22io.github.brealorg.subshell%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fbrealorg%2Fsubshell%22%2C%22author%22%3A%22brealorg%22%2C%22name%22%3A%22subshell%22%2C%22additionalSettings%22%3A%22%7B%5C%22includePrereleases%5C%22%3Atrue%7D%22%7D) ·
 [Website](https://brealorg.github.io/subshell/) ·
@@ -63,7 +63,7 @@ Searchable settings, grouped the way you think about them, with defaults that fo
 
 ## Get started
 
-1. **Install the APK.** Download the signed beta from [GitHub Releases](https://github.com/brealorg/subshell/releases/tag/v0.91-beta).
+1. **Install the APK.** Download the signed beta from [GitHub Releases](https://github.com/brealorg/subshell/releases/tag/v0.92-beta).
    Each release has a `.sha256` checksum and a release record, so a damaged download shows up.
    The checksum sits next to the APK, so it only catches a damaged download. To check that the APK
    is really signed by subshell, compare its signing certificate with this SHA-256 fingerprint:
@@ -81,14 +81,14 @@ Settings › Updates downloads the release APK from GitHub, checks it against th
 published SHA-256 and hands it to Android, which asks you before it installs.
 
 <!-- RELEASETOOL02_WHATS_NEW_START -->
-## What's new in 0.91-beta
+## What's new in 0.92-beta
 
-Export your Reddit data, and update from inside the app
+Thread colours, sorted search and feeds that keep your place
 
-- Settings › Updates shows your version and the newest one and checks on request. From the next release on, Update downloads it, checks it and hands it to Android to install.
-- When a new version is out, a notice says so. Close it and it stays away for a day.
-- Settings › Accounts › Export your Reddit data saves your saved posts, votes, posts, comments, communities and messages as a ZIP in Downloads.
-- Optional: tap a post's title to hide its text, like a comment. Turn it on in Settings › Comments & notifications.
+- This update signs you out once: sign in and set up your Client ID or RedReader again, then add your widgets and pinned shortcuts back.
+- Settings › Comments › Thread colours: branch lines by depth or in one colour, each top-level comment in its own card. Off by default, works with Guide lines.
+- Sort search results and the posts on a profile, with a time range for Top.
+- Optional: Settings › Feeds & content › Resume where you left off opens Home and communities at your place after the app has been closed.
 
 [All release notes](https://brealorg.github.io/subshell/changelog/)
 <!-- RELEASETOOL02_WHATS_NEW_END -->
