@@ -10,6 +10,21 @@ reading, writing, chatting and moderating, with no ads and no tracking.
 [FAQ](https://brealorg.github.io/subshell/faq/) ·
 [r/subshell](https://www.reddit.com/r/subshell/)
 
+**What you get**
+
+- **Keeps your place** in feeds, per account, and optionally after the app was closed
+- **Threads you can read:** replies load by themselves, find in thread (with an OP chip), new comments highlighted
+- **Moderator tools:** queue, Removed, Edited and Unmoderated lists, removal reasons, mod log, Modmail, bans and team
+- **Keep the noise out:** content filters, timed community mutes, an on-device language filter
+- **Hear about what matters:** new-post notifications for communities you watch, Inbox notifications per type
+- **Read offline:** save the top 50 posts of your feed with comments and images
+- **Photos and video:** galleries, a full-screen viewer, video quality per network, subtitles, picture-in-picture
+- **Chat and messages:** Direct Chat, private messages, several accounts
+- **Private and portable:** no ads, no analytics, no crash reporting; app lock; back up to a folder you own; export your Reddit data
+- **Open source:** GPL-3.0-or-later
+
+[All features, and what subshell does not do](FEATURES.md)
+
 <p align="center">
   <img src="site/assets/screenshots/home.webp"
        alt="subshell Home feed with a photo gallery post from r/norway."
@@ -25,7 +40,7 @@ reading, writing, chatting and moderating, with no ads and no tracking.
        width="200">
 </p>
 
-## What subshell does
+## In more detail
 
 ### It keeps your place.
 
