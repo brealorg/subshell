@@ -779,6 +779,7 @@
     <ul>
       <li><strong>No ads, no analytics, no crash reporting.</strong> The app contains no Firebase or Google Play services.</li>
       <li><strong>Sign-in and Client ID are stored encrypted</strong> on the device. Android's own cloud backup is switched off.</li>
+      <li><strong>What the cache keeps about you is stored encrypted</strong> with a key in the Android Keystore: your inbox, your joined-community list, your saved, upvoted, downvoted and hidden lists, and your reading counts. Posts and comments are not. <strong>(next release)</strong></li>
       <li><strong>App lock</strong> with biometrics or screen lock (off). Notifications can hide their content while it is on.</li>
       <li><strong>Your reading</strong> (off): counts of opens and time per community, kept on the device only, with suggestions to hide or leave communities you never open.</li>
       <li><strong>Backup</strong> your settings to a folder you choose. Hidden and muted communities, drafts, saved moderator responses and private notes are included only if you say so.</li>
@@ -803,7 +804,7 @@
       <li>Voting in polls (results show; voting opens Reddit). Editing a wiki.</li>
       <li>Background audio.</li>
       <li>YouTube, Streamable and Imgur albums have no special handling; they open as links.</li>
-      <li>The offline cache of posts is not encrypted by the app. Only your sign-in and Client ID are.</li>
+      <li>Posts and comments in the offline cache are not encrypted by the app. Your sign-in and Client ID are. Other private data kept in the app's settings (hidden communities, private notes on users, drafts, saved searches, muted communities) is not encrypted yet.</li>
     </ul>
   </details>
 </div>
