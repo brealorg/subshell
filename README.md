@@ -3,7 +3,7 @@
 **An independent Android client for Reddit**, for people who read and moderate a lot.
 No ads, no analytics, no tracking.
 
-**[Download the current public beta (1.0.0-rc.2)](https://github.com/brealorg/subshell/releases/tag/v1.0.0-rc.2)** ·
+**[Download the current public beta (1.0.0)](https://github.com/brealorg/subshell/releases/tag/v1.0.0)** ·
 [Get started](https://brealorg.github.io/subshell/get-started/) ·
 [Add to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22io.github.brealorg.subshell%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fbrealorg%2Fsubshell%22%2C%22author%22%3A%22brealorg%22%2C%22name%22%3A%22subshell%22%2C%22additionalSettings%22%3A%22%7B%5C%22includePrereleases%5C%22%3Atrue%7D%22%7D) ·
 [Website](https://brealorg.github.io/subshell/) ·
@@ -190,7 +190,7 @@ Open a group to see every feature in it. **(off)** means it is off until you tur
 
 ## Get started
 
-1. **Install the APK.** Download the signed beta from [GitHub Releases](https://github.com/brealorg/subshell/releases/tag/v1.0.0-rc.2).
+1. **Install the APK.** Download the signed beta from [GitHub Releases](https://github.com/brealorg/subshell/releases/tag/v1.0.0).
    Each release has a `.sha256` checksum and a release record, so a damaged download shows up.
    The checksum sits next to the APK, so it only catches a damaged download. To check that the APK
    is really signed by subshell, compare its signing certificate with this SHA-256 fingerprint:
@@ -208,12 +208,14 @@ Settings › Updates downloads the release APK from GitHub, checks it against th
 published SHA-256 and hands it to Android, which asks you before it installs.
 
 <!-- RELEASETOOL02_WHATS_NEW_START -->
-## What's new in 1.0.0-rc.2
+## What's new in 1.0.0
 
-The Update button in the update dialog now updates the app
+Moderation tools, clearer comment threads and private data stored encrypted
 
-- The "subshell update available" dialog now has an Update button that downloads and installs the update inside the app. Before, it only led to the GitHub page.
-- Everything else is the same as 1.0 release candidate 1 and 0.92. If Update or What's new does not work for you, tell us on r/subshell or GitHub.
+- Moderators can approve, remove or mark as spam from any ⋮ menu, change a post's flair, and see Removed, Edited and Unmoderated lists in Mod tools.
+- Comment threads are easier to follow: replies step right with each level (Settings > Comments > Reply indent), and Reply scrolls the comment you answer above the composer.
+- Tapping a post's flair searches its community for that flair, newest first.
+- New setting, off by default: Languages. Search skips communities and posts your phone is sure are in a language you have not chosen.
 
 [All release notes](https://brealorg.github.io/subshell/changelog/)
 <!-- RELEASETOOL02_WHATS_NEW_END -->
