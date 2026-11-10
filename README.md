@@ -41,7 +41,7 @@ It is a beta, and you need your own Reddit Client ID once (see below). Android 8
 <!-- FEATURES_README_START -->
 ## Everything it does
 
-Open a group to see every feature in it. **(off)** means it is off until you turn it on in Settings. **(next release)** means it is not in 1.0.0-rc.2 yet.
+Open a group to see every feature in it. **(off)** means it is off until you turn it on in Settings.
 
 <details>
 <summary><strong>Read</strong></summary>
@@ -54,7 +54,7 @@ Open a group to see every feature in it. **(off)** means it is off until you tur
 - **Pinned posts** as cards or a compact row. A row saying how many posts your filters hid, with a way to show them (off). A scroll indicator on feeds and threads (off).
 - **Save for offline:** the top 50 posts of your feed with their comment threads and images. Not video.
 - **Swipe actions** on posts and comments: upvote, downvote, save, hide or nothing, per direction (off).
-- **Flair:** tap a post's flair to search that flair in the community, newest first. **(next release)**
+- **Flair:** tap a post's flair to search that flair in the community, newest first.
 - **Random NSFW community,** placed where you choose (off).
 
 </details>
@@ -79,7 +79,7 @@ Open a group to see every feature in it. **(off)** means it is off until you tur
 - **Search** posts, communities and people from one field: all of Reddit or just the current community. Sort and time range. Recent searches.
 - **Paste a Reddit link** to open it in the app. Links to reddit.com and redd.it open in the app: posts, comments, communities, users, searches, wiki pages and custom feeds.
 - **Saved searches:** up to 50 per account (off).
-- **Language filter** for search and discovery: results in languages you did not pick are hidden, decided on the device (Android 10+, off). **(next release)**
+- **Language filter** for search and discovery: results in languages you did not pick are hidden, decided on the device (Android 10+, off).
 - **Communities:** join, leave, favourite; About, rules, moderators and a read-only wiki; your own flair; quarantined communities you can opt in to.
 - **Profiles** with posts and comments; block and unblock. Your own library: saved, upvoted, downvoted, hidden, drafts.
 
@@ -112,8 +112,8 @@ Open a group to see every feature in it. **(off)** means it is off until you tur
 <details>
 <summary><strong>Moderate</strong></summary>
 
-- **Mod tools** per community: the queue, the mod log, user management (ban, mute, approve) and the moderator team with permissions. The Removed, Edited and Unmoderated lists, and a REMOVED mark on posts, are **(next release)**.
-- **One Moderate menu** on every post and comment: approve, remove, spam, change flair, lock, distinguish, reports. **(next release)**
+- **Mod tools** per community: the queue, the mod log, user management (ban, mute, approve) and the moderator team with permissions. Moderators also get the Removed, Edited and Unmoderated lists, and a REMOVED mark on posts.
+- **One Moderate menu** on every post and comment: approve, remove, spam, change flair, lock, distinguish, reports.
 - **Removal reasons** and an optional message to the author. Saved responses.
 - **Modmail** with replies and internal notes. A cross-community queue in the Inbox.
 
@@ -156,7 +156,7 @@ Open a group to see every feature in it. **(off)** means it is off until you tur
 
 - **No ads, no analytics, no crash reporting.** The app contains no Firebase or Google Play services.
 - **Sign-in and Client ID are stored encrypted** on the device. Android's own cloud backup is switched off.
-- **What is about you is stored encrypted** with a key in the Android Keystore: your inbox, your joined-community list, your saved, upvoted, downvoted and hidden lists, your reading counts, the communities you hide or mute, your private notes on users, your saved searches, your post drafts, your saved moderator responses, your search history and favourites, and the home and saved feeds you have loaded. Posts and comments from public feeds are not. This keeps the files unreadable to anything that copies them off the phone without the key; it does not protect against someone using your unlocked phone. **(next release)**
+- **What is about you is stored encrypted** with a key in the Android Keystore: your inbox, your joined-community list, your saved, upvoted, downvoted and hidden lists, your reading counts, the communities you hide or mute, your private notes on users, your saved searches, your post drafts, your saved moderator responses, your search history and favourites, and the home and saved feeds you have loaded. Posts and comments from public feeds are not. This keeps the files unreadable to anything that copies them off the phone without the key; it does not protect against someone using your unlocked phone.
 - **App lock** with biometrics or screen lock (off). Notifications can hide their content while it is on.
 - **Your reading** (off): counts of opens and time per community, kept on the device only, with suggestions to hide or leave communities you never open.
 - **Backup** your settings to a folder you choose. Hidden and muted communities, drafts, saved moderator responses and private notes are included only if you say so.
@@ -183,7 +183,7 @@ Open a group to see every feature in it. **(off)** means it is off until you tur
 - Voting in polls (results show; voting opens Reddit). Editing a wiki.
 - Background audio.
 - YouTube, Streamable and Imgur albums have no special handling; they open as links.
-- Public posts and comments in the offline cache, image and video caches, cookies for Direct Chat, the app's display settings and the backups and exports you make yourself are not encrypted by the app. Your sign-in and Client ID are, and from the next release so is what is listed under Your data and privacy.
+- Public posts and comments in the offline cache, image and video caches, cookies for Direct Chat, the app's display settings and the backups and exports you make yourself are not encrypted by the app. Your sign-in and Client ID are, and so is what is listed under Your data and privacy.
 
 </details>
 <!-- FEATURES_README_END -->
