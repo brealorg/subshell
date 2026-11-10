@@ -1,7 +1,7 @@
 # subshell for Reddit
 
-**An independent Android client for Reddit**, built for everyday Reddit use:
-reading, writing, chatting and moderating, with no ads and no tracking.
+**An independent Android client for Reddit**, for people who read and moderate a lot.
+No ads, no analytics, no tracking.
 
 **[Download the current public beta (1.0.0-rc.2)](https://github.com/brealorg/subshell/releases/tag/v1.0.0-rc.2)** ·
 [Get started](https://brealorg.github.io/subshell/get-started/) ·
@@ -9,21 +9,6 @@ reading, writing, chatting and moderating, with no ads and no tracking.
 [Website](https://brealorg.github.io/subshell/) ·
 [FAQ](https://brealorg.github.io/subshell/faq/) ·
 [r/subshell](https://www.reddit.com/r/subshell/)
-
-**What you get**
-
-- **Keeps your place** in feeds, per account, and optionally after the app was closed
-- **Threads you can read:** replies load by themselves, find in thread (with an OP chip), new comments highlighted
-- **Moderator tools:** queue, Removed, Edited and Unmoderated lists, removal reasons, mod log, Modmail, bans and team
-- **Keep the noise out:** content filters, timed community mutes, an on-device language filter
-- **Hear about what matters:** new-post notifications for communities you watch, Inbox notifications per type
-- **Read offline:** save the top 50 posts of your feed with comments and images
-- **Photos and video:** galleries, a full-screen viewer, video quality per network, subtitles, picture-in-picture
-- **Chat and messages:** Direct Chat, private messages, several accounts
-- **Private and portable:** no ads, no analytics, no crash reporting; app lock; back up to a folder you own; export your Reddit data
-- **Open source:** GPL-3.0-or-later
-
-[All features, and what subshell does not do](FEATURES.md)
 
 <p align="center">
   <img src="site/assets/screenshots/home.webp"
@@ -40,63 +25,167 @@ reading, writing, chatting and moderating, with no ads and no tracking.
        width="200">
 </p>
 
-## In more detail
+## What you get
 
-### It keeps your place.
+- **Keeps your place** in feeds, also after the app was closed (optional)
+- **Threads you can read:** replies load by themselves, find in thread, new comments highlighted
+- **Moderator tools:** queue, removal reasons, mod log, Modmail
+- **Filters, mutes and notifications:** hide what you do not want, hear about what you do
+- **Offline, backup and export:** save your feed, back up to a folder you own, export your Reddit data
+- **No ads, no analytics, no crash reporting.** Open source, GPL-3.0-or-later
 
-Open a post, go back, switch accounts: the feed is where you left it. Pages load as you scroll, with no "load more" buttons.
+It is a beta, and you need your own Reddit Client ID once (see below). Android 8.0 or newer.
 
-- Optional: reopen at your place after the app was closed, as you left it or after loading new posts
-- Unread markers, and hide the posts you have read
-- Save your feed for offline reading: top 50 posts, their comments and images
+**[Everything it does, and what it does not →](#everything-it-does)**
 
-### Threads you can read.
+<!-- FEATURES_README_START -->
+## Everything it does
 
-Replies load by themselves, and you can find your way around long threads.
+Open a group to see every feature in it. **(off)** means it is off until you turn it on in Settings.
 
-- Find in thread, with a chip for the post author's comments
-- Comments new since your last visit are highlighted and counted
-- Thread colours and a jump between top-level comments (both optional)
-- Reddit's suggested sort, used for you
+<details>
+<summary><strong>Read</strong></summary>
 
-### Moderate from your phone.
+- **Feeds:** Home, Popular, All, and custom feeds you create, edit and favourite. Four layouts: Large, Compact, List (thumbnail on either side), Grid.
+- **Sorting:** Best, Hot, New, Rising, Top, Controversial, with a time range where Reddit offers one. Each community remembers its own sort.
+- **Your place is kept.** A feed stays where it was when you open a post and go back, per account. Resume where you left off after the app was closed (off), either as you left it or by loading new posts and finding your place within four pages.
+- **No "load more" buttons.** Pages and replies load as you scroll.
+- **Unread markers** on posts you have not opened. Hide posts you have read, or forget what counts as read.
+- **Pinned posts** as cards or a compact row. A row saying how many posts your filters hid, with a way to show them (off). A scroll indicator on feeds and threads (off).
+- **Save for offline:** the top 50 posts of your feed with their comment threads and images. Not video.
+- **Swipe actions** on posts and comments: upvote, downvote, save, hide or nothing, per direction (off).
+- **Flair:** tap a post's flair to search that flair in the community, newest first.
+- **Random NSFW community,** placed where you choose (off).
 
-- The queue, Removed, Edited and Unmoderated lists, the mod log and Modmail with internal notes
-- One Moderate menu on every post and comment: approve, remove with the community's removal reasons, spam, flair, lock, distinguish, reports
-- Ban, mute and approve users; manage the moderator team; saved responses
+</details>
 
-### Keep the noise out, hear about what matters.
+<details>
+<summary><strong>Threads</strong></summary>
 
-- Content filters for words, users, domains, communities and flair, everywhere or in one community
-- Mute a community for an hour, a week or for good; hide a joined community without leaving it
-- An on-device language filter for search and discovery (Android 10+, optional)
-- Notifications for new posts in communities you watch, and Inbox notifications per type
+- **Replies load by themselves,** with guide lines or parent connectors; thread colours by depth or in one colour (off).
+- **Find in thread:** search the comments, step through matches, open collapsed branches, and limit it to the post author's comments with the OP chip.
+- **New comments** since your last visit are highlighted and counted in the header.
+- **Jump** to the next or previous top-level comment (off).
+- **Comment sort:** Best, Top, New, Controversial, Old. Reddit's suggested sort is used for you.
+- **Collapse** a comment by tapping it or its header. Collapse long post text (off).
+- **Comments show** avatars, code blocks with a copy button, spoilers, and inline images and GIFs. Choice of three code fonts.
+- **Jump to a comment** from a link, a notification or a comment you just wrote.
 
-### Photos and video.
+</details>
 
-- Galleries and a full-screen viewer with zoom, share and save
-- Reddit video with a quality limit per network, subtitles and audio language; RedGIFs in NSFW posts
-- Optional: playback speed, double-tap skip, hold for 2x, pinch zoom, picture-in-picture
+<details>
+<summary><strong>Find</strong></summary>
 
-### Private, portable, open.
+- **Search** posts, communities and people from one field: all of Reddit or just the current community. Sort and time range. Recent searches.
+- **Paste a Reddit link** to open it in the app. Links to reddit.com and redd.it open in the app: posts, comments, communities, users, searches, wiki pages and custom feeds.
+- **Saved searches:** up to 50 per account (off).
+- **Language filter** for search and discovery: results in languages you did not pick are hidden, decided on the device (Android 10+, off).
+- **Communities:** join, leave, favourite; About, rules, moderators and a read-only wiki; your own flair; quarantined communities you can opt in to.
+- **Profiles** with posts and comments; block and unblock. Your own library: saved, upvoted, downvoted, hidden, drafts.
 
-- No ads, no analytics, no crash reporting; your sign-in is stored encrypted on the device
-- Optional app lock, and device unlock before hidden communities show
-- Back up your settings to a folder you own; export your Reddit data as JSON and CSV
-- GPL-3.0-or-later; updates are checked against a published SHA-256 before Android installs them
+</details>
 
-### Make it yours.
+<details>
+<summary><strong>Photos and video</strong></summary>
 
-- Light, dark or system theme, dynamic colour and pure black; text and UI size
-- Left- or right-handed controls and navigation; tablets and foldables
-- Drafts, saved searches, private notes on usernames, widgets and launcher shortcuts
-- Searchable settings in ten areas; many extras are off until you turn them on
+- **Galleries** and a **full-screen viewer** with zoom, share and save to Downloads. Captions as overlay, below or hidden.
+- **Reddit video:** one plays at a time in the feed. Quality limit per network (High on Wi-Fi and Medium on mobile data by default), subtitles, audio language. Videos start muted. Autoplay Always, Wi-Fi only or Never.
+- **Optional video controls (all off):** playback speed, double-tap to skip, hold for 2x, pinch to zoom, picture-in-picture, rotate for wide videos, technical details.
+- **Landscape full screen:** swipe the left half for brightness and the right half for volume.
+- **Sensitive media** is blurred by default; choose load on tap or hide. NSFW media only plays automatically if you turn that on.
+- **RedGIFs** clips in NSFW posts play in the app.
+- **Storage:** video cache of 256 MB to 2 GB (1 GB by default), clear caches from Settings.
 
-**Also in subshell:** Direct Chat, Several accounts, Share into subshell, Custom feeds, Crossposting, Mention suggestions from the thread.
+</details>
 
-**What it does not do:** no video download, no alt text, no voting in polls and no wiki editing.
+<details>
+<summary><strong>Write</strong></summary>
 
-**[Everything subshell does, and what it does not →](FEATURES.md)**
+- **Post composer** for text, link and media (up to 20 images) with community picker, flair, title, formatting toolbar and preview. It checks the community's posting requirements before you send.
+- **Comment composer** with image and GIF where the community allows them. Reply, edit and delete your own comments; edit, manage (flair, NSFW, spoiler) and delete your own posts.
+- **Drafts** for posts and replies. **Crosspost.** **Mention suggestions:** typing `@` or `u/` suggests people from the thread first.
+- **Private notes** on usernames: a colour label and a note, never sent to Reddit.
+- **Share into subshell** from other apps (off).
+
+</details>
+
+<details>
+<summary><strong>Moderate</strong></summary>
+
+- **Mod tools** per community: the queue and the Removed, Edited and Unmoderated lists, the mod log, user management (ban, mute, approve) and the moderator team with permissions.
+- **One Moderate menu** on every post and comment: approve, remove, spam, change flair, lock, distinguish, reports.
+- **Removal reasons** and an optional message to the author. Saved responses.
+- **Modmail** with replies and internal notes. A cross-community queue in the Inbox.
+
+</details>
+
+<details>
+<summary><strong>Stay informed</strong></summary>
+
+- **Inbox:** replies, mentions, private messages, Reddit notices and, for moderators, Mod. Mark read, dismiss, select.
+- **Notifications** per type: replies, mentions, private messages, Reddit notices, Modmail. Messages arrive as conversations and can be answered from the notification.
+- **New-post notifications** for up to ten communities you watch, and optionally each new comment.
+- **Direct Chat** and private messages: text, images and GIFs, reactions, typing indicator, delete your own.
+- **Widgets** for the Inbox and for posts from Home or a community. **Launcher shortcuts** for communities (off).
+
+</details>
+
+<details>
+<summary><strong>Control what you see</strong></summary>
+
+- **Content filters:** words, communities, users, domains and flair, everywhere or in one community. Nothing changes on Reddit.
+- **Mute a community** for an hour, a day, a week, until a date or for good. Choose whether a direct visit shows posts or only About.
+- **Hide a joined community** from your list without leaving it. Optionally require device unlock before hidden communities show.
+- **NSFW** posts and media are off until you turn them on.
+
+</details>
+
+<details>
+<summary><strong>Look and feel</strong></summary>
+
+- Light, dark or system theme, dynamic colour (Android 12+), pure black. UI size 85 to 110 % and text size 85 to 130 %. Vote buttons as thumbs or arrows, with vote colours.
+- Left- or right-handed controls and side menu. Top and bottom bars that hide on scroll. Navigation labels. Communities written as r/name, /r/name or name.
+- Tablets and foldables: navigation rail, list and detail side by side, tabletop posture for video.
+- Reduce motion, TalkBack actions on feed cards, 48 dp touch targets.
+- Searchable settings in ten areas.
+
+</details>
+
+<details>
+<summary><strong>Your data and privacy</strong></summary>
+
+- **No ads, no analytics, no crash reporting.** The app contains no Firebase or Google Play services.
+- **Sign-in and Client ID are stored encrypted** on the device. Android's own cloud backup is switched off.
+- **App lock** with biometrics or screen lock (off). Notifications can hide their content while it is on.
+- **Your reading** (off): counts of opens and time per community, kept on the device only, with suggestions to hide or leave communities you never open.
+- **Backup** your settings to a folder you choose. Hidden and muted communities, drafts, saved moderator responses and private notes are included only if you say so.
+- **Export your Reddit data** (saved, votes, posts, comments, communities, messages and more) as JSON and CSV in one ZIP.
+- **Several accounts,** switched from the bottom bar. Everything account-specific is kept per account.
+- **Open source,** GPL-3.0-or-later.
+
+</details>
+
+<details>
+<summary><strong>Install and update</strong></summary>
+
+- Android 8.0 or newer. You need your own Reddit Client ID once ([how](https://brealorg.github.io/subshell/get-started/)).
+- **Updates inside the app:** Settings › Updates. The APK is checked against a published SHA-256 before Android is asked to install it.
+- **What's new** shows after an update. The full history is the [changelog](https://brealorg.github.io/subshell/changelog/).
+
+</details>
+
+<details>
+<summary><strong>Not supported</strong></summary>
+
+- Video download (saving an image, and exporting a video to Downloads/subshell, work).
+- Alt text for images, viewing or writing.
+- Voting in polls (results show; voting opens Reddit). Editing a wiki.
+- Background audio.
+- YouTube, Streamable and Imgur albums have no special handling; they open as links.
+- The offline cache of posts is not encrypted by the app. Only your sign-in and Client ID are.
+
+</details>
+<!-- FEATURES_README_END -->
 
 ## Get started
 

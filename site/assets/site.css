@@ -2844,3 +2844,82 @@ code.fingerprint {
 .hero-more a {
   color: var(--md-sys-color-primary);
 }
+
+/* PUBLIC04: every feature, in collapsible groups (generated from FEATURES.md). */
+.feature-accordion {
+  display: grid;
+  gap: 10px;
+  max-width: 860px;
+  margin: 40px auto 0;
+  scroll-margin-top: 90px;
+}
+
+.feature-accordion h3 {
+  margin: 0;
+}
+
+.feature-accordion > p {
+  margin: 0 0 6px;
+
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+.feature-accordion details {
+  border-radius: var(--shape-large, 20px);
+
+  background: var(--md-sys-color-surface-container, var(--md-sys-color-secondary-container));
+}
+
+.feature-accordion summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  padding: 16px 20px;
+
+  cursor: pointer;
+  list-style: none;
+
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.feature-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.feature-accordion summary::after {
+  content: "+";
+
+  color: var(--md-sys-color-primary);
+
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.feature-accordion details[open] summary::after {
+  content: "\2212";
+}
+
+.feature-accordion ul {
+  display: grid;
+  gap: 8px;
+
+  margin: 0;
+  padding: 0 20px 18px 38px;
+
+  color: var(--md-sys-color-on-surface-variant);
+
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.feature-accordion strong {
+  color: var(--md-sys-color-on-surface);
+}
+
+.feature-accordion a {
+  color: var(--md-sys-color-primary);
+}
