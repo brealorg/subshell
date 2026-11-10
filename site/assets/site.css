@@ -2792,3 +2792,55 @@ code.fingerprint {
 
   font-size: clamp(17px, 1.6vw, 19px);
 }
+
+/* PUBLIC03: a short list of what the app does, under the download buttons. */
+.hero-points {
+  display: grid;
+  gap: 9px;
+  max-width: 520px;
+  margin: 28px 0 0;
+  padding: 0;
+
+  list-style: none;
+
+  color: var(--md-sys-color-on-surface-variant);
+
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.hero-points li {
+  position: relative;
+
+  padding-left: 22px;
+}
+
+.hero-points li::before {
+  content: "";
+
+  position: absolute;
+  top: 0.55em;
+  left: 0;
+
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: var(--md-sys-color-primary);
+}
+
+.hero-points strong {
+  color: var(--md-sys-color-on-surface);
+  font-weight: 600;
+}
+
+.hero-more {
+  margin: 14px 0 0;
+
+  font-size: 14px;
+}
+
+.hero-more a {
+  color: var(--md-sys-color-primary);
+}
