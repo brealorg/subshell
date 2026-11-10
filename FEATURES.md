@@ -1,7 +1,7 @@
 # What subshell does
 
-The complete list, ordered by what you do. Checked against the code of **1.0.0-rc.2** (2026-11-10).
-**(off)** means it is off until you turn it on in Settings. Settings paths are written as Settings › Area › Setting.
+The complete list, ordered by what you do. Checked against the code on `main` (2026-11-10).
+**(off)** means it is off until you turn it on in Settings. **(next release)** means it is not in 1.0.0-rc.2 yet. Settings paths are written as Settings › Area › Setting.
 
 New here? The [README](README.md) has the short version.
 
@@ -15,7 +15,7 @@ New here? The [README](README.md) has the short version.
 - **Pinned posts** as cards or a compact row. A row saying how many posts your filters hid, with a way to show them (off). A scroll indicator on feeds and threads (off).
 - **Save for offline:** the top 50 posts of your feed with their comment threads and images. Not video.
 - **Swipe actions** on posts and comments: upvote, downvote, save, hide or nothing, per direction (off).
-- **Flair:** tap a post's flair to search that flair in the community, newest first.
+- **Flair:** tap a post's flair to search that flair in the community, newest first. **(next release)**
 - **Random NSFW community,** placed where you choose (off).
 
 ## Threads
@@ -34,7 +34,7 @@ New here? The [README](README.md) has the short version.
 - **Search** posts, communities and people from one field: all of Reddit or just the current community. Sort and time range. Recent searches.
 - **Paste a Reddit link** to open it in the app. Links to reddit.com and redd.it open in the app: posts, comments, communities, users, searches, wiki pages and custom feeds.
 - **Saved searches:** up to 50 per account (off).
-- **Language filter** for search and discovery: results in languages you did not pick are hidden, decided on the device (Android 10+, off).
+- **Language filter** for search and discovery: results in languages you did not pick are hidden, decided on the device (Android 10+, off). **(next release)**
 - **Communities:** join, leave, favourite; About, rules, moderators and a read-only wiki; your own flair; quarantined communities you can opt in to.
 - **Profiles** with posts and comments; block and unblock. Your own library: saved, upvoted, downvoted, hidden, drafts.
 
@@ -58,8 +58,8 @@ New here? The [README](README.md) has the short version.
 
 ## Moderate
 
-- **Mod tools** per community: the queue and the Removed, Edited and Unmoderated lists, the mod log, user management (ban, mute, approve) and the moderator team with permissions.
-- **One Moderate menu** on every post and comment: approve, remove, spam, change flair, lock, distinguish, reports.
+- **Mod tools** per community: the queue, the mod log, user management (ban, mute, approve) and the moderator team with permissions. The Removed, Edited and Unmoderated lists, and a REMOVED mark on posts, are **(next release)**.
+- **One Moderate menu** on every post and comment: approve, remove, spam, change flair, lock, distinguish, reports. **(next release)**
 - **Removal reasons** and an optional message to the author. Saved responses.
 - **Modmail** with replies and internal notes. A cross-community queue in the Inbox.
 

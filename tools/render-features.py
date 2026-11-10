@@ -37,7 +37,7 @@ def inline_html(s):
 
 def readme_block(secs):
     parts = ["## Everything it does", "",
-             "Open a group to see every feature in it. **(off)** means it is off until you turn it on in Settings.", ""]
+             "Open a group to see every feature in it. **(off)** means it is off until you turn it on in Settings. **(next release)** means it is not in 1.0.0-rc.2 yet.", ""]
     for title, items in secs:
         parts += ["<details>", f"<summary><strong>{title}</strong></summary>", ""]
         parts += [f"- {i}" for i in items]
@@ -48,7 +48,7 @@ def readme_block(secs):
 def site_block(secs):
     parts = ['<div class="feature-accordion" id="everything">',
              "  <h3>Everything it does</h3>",
-             "  <p>Open a group to see every feature in it. <strong>(off)</strong> means it is off until you turn it on in Settings.</p>"]
+             "  <p>Open a group to see every feature in it. <strong>(off)</strong> means it is off until you turn it on in Settings. <strong>(next release)</strong> means it is not in 1.0.0-rc.2 yet.</p>"]
     for title, items in secs:
         parts.append("  <details>")
         parts.append(f"    <summary>{html.escape(title)}</summary>")
