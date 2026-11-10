@@ -59,7 +59,18 @@ Searchable settings, grouped the way you think about them, with defaults that fo
 - Left- or right-handed controls and navigation
 - Backups to a folder you own, and an optional app lock
 
+### More than a reader.
+
+- Feeds that remember your place, also after the app was closed (optional)
+- Moderator tools on the phone: queue, removal reasons, Modmail, mod log, bans
+- Timed mutes, content filters and an on-device language filter
+- New-post notifications for the communities you watch
+- Save your feed for offline reading, back up to a folder you own, export your Reddit data
+- GPL-3.0-or-later, no ads, no analytics, no crash reporting
+
 **Also in subshell:** Direct Chat, Inbox notifications, Modmail and mod tools, Several accounts, Tablets and foldables, Saved searches, Share into subshell, No ads, no tracking.
+
+**[Everything subshell does, and what it does not →](FEATURES.md)**
 
 ## Get started
 
