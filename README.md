@@ -156,7 +156,7 @@ Open a group to see every feature in it. **(off)** means it is off until you tur
 
 - **No ads, no analytics, no crash reporting.** The app contains no Firebase or Google Play services.
 - **Sign-in and Client ID are stored encrypted** on the device. Android's own cloud backup is switched off.
-- **What the cache keeps about you is stored encrypted** with a key in the Android Keystore: your inbox, your joined-community list, your saved, upvoted, downvoted and hidden lists, and your reading counts. Posts and comments are not. **(next release)**
+- **What is about you is stored encrypted** with a key in the Android Keystore: your inbox, your joined-community list, your saved, upvoted, downvoted and hidden lists, your reading counts, the communities you hide or mute, your private notes on users, your saved searches, your post drafts and your saved moderator responses. Posts and comments are not. **(next release)**
 - **App lock** with biometrics or screen lock (off). Notifications can hide their content while it is on.
 - **Your reading** (off): counts of opens and time per community, kept on the device only, with suggestions to hide or leave communities you never open.
 - **Backup** your settings to a folder you choose. Hidden and muted communities, drafts, saved moderator responses and private notes are included only if you say so.
@@ -183,7 +183,7 @@ Open a group to see every feature in it. **(off)** means it is off until you tur
 - Voting in polls (results show; voting opens Reddit). Editing a wiki.
 - Background audio.
 - YouTube, Streamable and Imgur albums have no special handling; they open as links.
-- Posts and comments in the offline cache are not encrypted by the app. Your sign-in and Client ID are. Other private data kept in the app's settings (hidden communities, private notes on users, drafts, saved searches, muted communities) is not encrypted yet.
+- Posts and comments in the offline cache are not encrypted by the app. Your sign-in and Client ID are, and from the next release so is what is listed under Your data and privacy. Your favourite communities and the other app settings are not encrypted.
 
 </details>
 <!-- FEATURES_README_END -->
