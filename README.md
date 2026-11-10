@@ -25,50 +25,61 @@ reading, writing, chatting and moderating, with no ads and no tracking.
        width="200">
 </p>
 
-## Reddit, the Android way
+## What subshell does
 
-### Built for reading.
+### It keeps your place.
 
-Feeds that keep your place when you open a post or switch accounts, threads that load replies by themselves, and comments that stay readable on any screen.
+Open a post, go back, switch accounts: the feed is where you left it. Pages load as you scroll, with no "load more" buttons.
 
-- Unread markers and highlighted new comments
-- Find in thread and jump between top-level comments
-- Swipe actions and vote controls the way you like them
+- Optional: reopen at your place after the app was closed, as you left it or after loading new posts
+- Unread markers, and hide the posts you have read
+- Save your feed for offline reading: top 50 posts, their comments and images
 
-### Photos and video, done properly.
+### Threads you can read.
 
-Galleries, a full-screen viewer and Reddit video that adapts to your connection.
+Replies load by themselves, and you can find your way around long threads.
 
-- Share and save images in one tap
-- Video quality per network, subtitles and audio language
-- Optional speed, double-tap skip and picture-in-picture
+- Find in thread, with a chip for the post author's comments
+- Comments new since your last visit are highlighted and counted
+- Thread colours and a jump between top-level comments (both optional)
+- Reddit's suggested sort, used for you
 
-### Your communities, your rules.
+### Moderate from your phone.
 
-Favorites, custom feeds and recent communities close at hand, and the tools to keep the rest out of the way.
+- The queue, Removed, Edited and Unmoderated lists, the mod log and Modmail with internal notes
+- One Moderate menu on every post and comment: approve, remove with the community's removal reasons, spam, flair, lock, distinguish, reports
+- Ban, mute and approve users; manage the moderator team; saved responses
 
-- Join, favorite, mute for a while or hide
-- Content filters for words, users, domains and flair
-- Community info, rules and wiki without leaving the app
+### Keep the noise out, hear about what matters.
+
+- Content filters for words, users, domains, communities and flair, everywhere or in one community
+- Mute a community for an hour, a week or for good; hide a joined community without leaving it
+- An on-device language filter for search and discovery (Android 10+, optional)
+- Notifications for new posts in communities you watch, and Inbox notifications per type
+
+### Photos and video.
+
+- Galleries and a full-screen viewer with zoom, share and save
+- Reddit video with a quality limit per network, subtitles and audio language; RedGIFs in NSFW posts
+- Optional: playback speed, double-tap skip, hold for 2x, pinch zoom, picture-in-picture
+
+### Private, portable, open.
+
+- No ads, no analytics, no crash reporting; your sign-in is stored encrypted on the device
+- Optional app lock, and device unlock before hidden communities show
+- Back up your settings to a folder you own; export your Reddit data as JSON and CSV
+- GPL-3.0-or-later; updates are checked against a published SHA-256 before Android installs them
 
 ### Make it yours.
 
-Searchable settings, grouped the way you think about them, with defaults that follow Android.
+- Light, dark or system theme, dynamic colour and pure black; text and UI size
+- Left- or right-handed controls and navigation; tablets and foldables
+- Drafts, saved searches, private notes on usernames, widgets and launcher shortcuts
+- Searchable settings in ten areas; many extras are off until you turn them on
 
-- Follows your light or dark theme, with dynamic colour and pure black
-- Left- or right-handed controls and navigation
-- Backups to a folder you own, and an optional app lock
+**Also in subshell:** Direct Chat, Several accounts, Share into subshell, Custom feeds, Crossposting, Mention suggestions from the thread.
 
-### More than a reader.
-
-- Feeds that remember your place, also after the app was closed (optional)
-- Moderator tools on the phone: queue, removal reasons, Modmail, mod log, bans
-- Timed mutes, content filters and an on-device language filter
-- New-post notifications for the communities you watch
-- Save your feed for offline reading, back up to a folder you own, export your Reddit data
-- GPL-3.0-or-later, no ads, no analytics, no crash reporting
-
-**Also in subshell:** Direct Chat, Inbox notifications, Modmail and mod tools, Several accounts, Tablets and foldables, Saved searches, Share into subshell, No ads, no tracking.
+**What it does not do:** no video download, no alt text, no voting in polls and no wiki editing.
 
 **[Everything subshell does, and what it does not →](FEATURES.md)**
 
