@@ -3,7 +3,7 @@
 **An independent Android client for Reddit**, for people who read and moderate a lot.
 No ads, no analytics, no tracking.
 
-**[Download Subshell 1.0.0](https://github.com/brealorg/subshell/releases/tag/v1.0.0)** ·
+**[Download Subshell 1.0.1](https://github.com/brealorg/subshell/releases/tag/v1.0.1)** ·
 [Get started](https://brealorg.github.io/subshell/get-started/) ·
 [Add to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22io.github.brealorg.subshell%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fbrealorg%2Fsubshell%22%2C%22author%22%3A%22brealorg%22%2C%22name%22%3A%22subshell%22%2C%22additionalSettings%22%3A%22%7B%5C%22includePrereleases%5C%22%3Afalse%7D%22%7D) ·
 [Website](https://brealorg.github.io/subshell/) ·
@@ -190,7 +190,7 @@ Open a group to see every feature in it. **(off)** means it is off until you tur
 
 ## Get started
 
-1. **Install the APK.** Download the signed APK from [GitHub Releases](https://github.com/brealorg/subshell/releases/tag/v1.0.0).
+1. **Install the APK.** Download the signed APK from [GitHub Releases](https://github.com/brealorg/subshell/releases/tag/v1.0.1).
    Each release has a `.sha256` checksum and a release record, so a damaged download shows up.
    The checksum sits next to the APK, so it only catches a damaged download. To check that the APK
    is really signed by subshell, compare its signing certificate with this SHA-256 fingerprint:
@@ -208,14 +208,14 @@ Settings › Updates downloads the release APK from GitHub, checks it against th
 published SHA-256 and hands it to Android, which asks you before it installs.
 
 <!-- RELEASETOOL02_WHATS_NEW_START -->
-## What's new in 1.0.0
+## What's new in 1.0.1
 
-Moderation tools, clearer comment threads and private data stored encrypted
+Fixes the app staying blank and "not responding" on the first start after updating from rc.2
 
-- Moderators can approve, remove or mark as spam from any ⋮ menu, change a post's flair, and see Removed, Edited and Unmoderated lists in Mod tools.
-- Comment threads are easier to follow: replies step right with each level (Settings > Comments > Reply indent), and Reply scrolls the comment you answer above the composer.
-- Tapping a post's flair searches its community for that flair, newest first.
-- New setting, off by default: Languages. Search skips communities and posts your phone is sure are in a language you have not chosen.
+- Fixed: on some phones the app showed a blank window and then "not responding" on the first start after updating from rc.2. Starting no longer waits for encryption.
+- Data older versions stored as plain text is now encrypted in the background, and only while the app is not busy.
+- Feeds and the start stay fast on phones with a slow Android Keystore, and the app no longer freezes if the Keystore stops answering.
+- Diagnostics now keep where the app was stuck when Android reports it as not responding, so problems like this are easier to find.
 
 [All release notes](https://brealorg.github.io/subshell/changelog/)
 <!-- RELEASETOOL02_WHATS_NEW_END -->

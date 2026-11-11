@@ -155,6 +155,18 @@
 
           <div class="info-content">
             <!-- RELEASETOOL02_CHANGELOG_START -->
+            <section class="release-entry" id="v1.0.1">
+              <h2>1.0.1</h2>
+              <p class="release-meta">11 November 2026 &middot; <a href="https://github.com/brealorg/subshell/releases/tag/v1.0.1">Release on GitHub</a></p>
+              <p>Fixes the app staying blank and &quot;not responding&quot; on the first start after updating from rc.2</p>
+              <ul>
+                <li>Fixed: on some phones the app showed a blank window and then &quot;not responding&quot; on the first start after updating from rc.2. Starting no longer waits for encryption.</li>
+                <li>Data older versions stored as plain text is now encrypted in the background, and only while the app is not busy.</li>
+                <li>Feeds and the start stay fast on phones with a slow Android Keystore, and the app no longer freezes if the Keystore stops answering.</li>
+                <li>Diagnostics now keep where the app was stuck when Android reports it as not responding, so problems like this are easier to find.</li>
+                <li>If something does not work for you, tell us on r/subshell or GitHub.</li>
+              </ul>
+            </section>
             <section class="release-entry" id="v1.0.0">
               <h2>1.0.0</h2>
               <p class="release-meta">10 November 2026 &middot; <a href="https://github.com/brealorg/subshell/releases/tag/v1.0.0">Release on GitHub</a></p>
