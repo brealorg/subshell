@@ -1,7 +1,7 @@
 # What subshell does
 
 The complete list, ordered by what you do. Checked against the code on `main` (2026-11-10).
-**(off)** means it is off until you turn it on in Settings. Settings paths are written as Settings › Area › Setting.
+**(off)** means it is off until you turn it on in Settings. **(next release)** means it is in the code on `main` but not in the published version yet. Settings paths are written as Settings › Area › Setting.
 
 New here? The [README](README.md) has the short version.
 
@@ -16,6 +16,7 @@ New here? The [README](README.md) has the short version.
 - **Save for offline:** the top 50 posts of your feed with their comment threads and images. Not video.
 - **Swipe actions** on posts and comments: upvote, downvote, save, hide or nothing, per direction (off).
 - **Flair:** tap a post's flair to search that flair in the community, newest first.
+- **Long web addresses are shown short** in posts, comments and on a link post's card (host and the start of the path), and a long press on a link gives Share, Copy, Open in browser and Copy original link. The post keeps the whole address. (next release)
 - **Random NSFW community,** placed where you choose (off).
 
 ## Threads
@@ -77,6 +78,7 @@ New here? The [README](README.md) has the short version.
 - **Mute a community** for an hour, a day, a week, until a date or for good. Choose whether a direct visit shows posts or only About.
 - **Hide a joined community** from your list without leaving it. Optionally require device unlock before hidden communities show.
 - **NSFW** posts and media are off until you turn them on.
+- **Clean links:** known tracking parameters (utm_, fbclid, gclid and similar, and a few per-site ones) are removed from links you open, share or copy; other parameters stay. Settings › Media & links › Clean links. (next release)
 
 ## Look and feel
 
