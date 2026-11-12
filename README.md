@@ -55,7 +55,7 @@ Open a group to see every feature in it. **(off)** means it is off until you tur
 - **Save for offline:** the top 50 posts of your feed with their comment threads and images. Not video.
 - **Swipe actions** on posts and comments: upvote, downvote, save, hide or nothing, per direction (off).
 - **Flair:** tap a post's flair to search that flair in the community, newest first.
-- **Long web addresses are shown short** in posts, comments and on a link post's card (host and the start of the path), and a long press on a link gives Share, Copy, Open in browser and Copy original link. The post keeps the whole address. (next release)
+- **Long web addresses are shown short** in posts, comments and on a link post's card (host and the start of the path), and a long press on a link gives Share, Copy, Open in browser and Copy original link. The post keeps the whole address.
 - **Random NSFW community,** placed where you choose (off).
 
 </details>
@@ -138,7 +138,7 @@ Open a group to see every feature in it. **(off)** means it is off until you tur
 - **Mute a community** for an hour, a day, a week, until a date or for good. Choose whether a direct visit shows posts or only About.
 - **Hide a joined community** from your list without leaving it. Optionally require device unlock before hidden communities show.
 - **NSFW** posts and media are off until you turn them on.
-- **Clean links:** known tracking parameters (utm_, fbclid, gclid and similar, and a few per-site ones) are removed from links you open, share or copy; other parameters stay. Settings › Media & links › Clean links. (next release)
+- **Clean links:** known tracking parameters (utm_, fbclid, gclid and similar, and a few per-site ones) are removed from links you open, share or copy; other parameters stay. Settings › Media & links › Clean links.
 
 </details>
 
