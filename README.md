@@ -48,6 +48,7 @@ Open a group to see every feature in it. **(off)** means it is off until you tur
 
 - **Feeds:** Home, Popular, All, and custom feeds you create, edit and favourite. Four layouts: Large, Compact, List (thumbnail on either side), Grid.
 - **Sorting:** Best, Hot, New, Rising, Top, Controversial, with a time range where Reddit offers one. Each community remembers its own sort.
+- **Start feed and default sorts:** choose whether the app opens on Home, Popular or All, how those feeds are sorted, and how a community is sorted until you pick a sort there. Settings › Feeds & content › Feeds. (next release)
 - **Your place is kept.** A feed stays where it was when you open a post and go back, per account. Resume where you left off after the app was closed (off), either as you left it or by loading new posts and finding your place within four pages.
 - **No "load more" buttons.** Pages and replies load as you scroll.
 - **Unread markers** on posts you have not opened. Hide posts you have read, or forget what counts as read.
@@ -56,6 +57,7 @@ Open a group to see every feature in it. **(off)** means it is off until you tur
 - **Swipe actions** on posts and comments: upvote, downvote, save, hide or nothing, per direction (off).
 - **Flair:** tap a post's flair to search that flair in the community, newest first.
 - **Long web addresses are shown short** in posts, comments and on a link post's card (host and the start of the path), and a long press on a link gives Share, Copy, Open in browser and Copy original link. The post keeps the whole address.
+- **Copy…** in a post's or comment's menu: copy the text, select part of it, copy the Reddit link, or pick one of the web links in it. (next release)
 - **Random NSFW community,** placed where you choose (off).
 
 </details>
