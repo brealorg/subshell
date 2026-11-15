@@ -3,7 +3,7 @@
 **An independent Android client for Reddit**, for people who read and moderate a lot.
 No ads, no analytics, no tracking.
 
-**[Download Subshell 1.0.2](https://github.com/brealorg/subshell/releases/tag/v1.0.2)** ·
+**[Download Subshell 1.0.3](https://github.com/brealorg/subshell/releases/tag/v1.0.3)** ·
 [Get started](https://brealorg.github.io/subshell/get-started/) ·
 [Add to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22io.github.brealorg.subshell%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fbrealorg%2Fsubshell%22%2C%22author%22%3A%22brealorg%22%2C%22name%22%3A%22subshell%22%2C%22additionalSettings%22%3A%22%7B%5C%22includePrereleases%5C%22%3Afalse%7D%22%7D) ·
 [Website](https://brealorg.github.io/subshell/) ·
@@ -194,7 +194,7 @@ Open a group to see every feature in it. **(off)** means it is off until you tur
 
 ## Get started
 
-1. **Install the APK.** Download the signed APK from [GitHub Releases](https://github.com/brealorg/subshell/releases/tag/v1.0.2).
+1. **Install the APK.** Download the signed APK from [GitHub Releases](https://github.com/brealorg/subshell/releases/tag/v1.0.3).
    Each release has a `.sha256` checksum and a release record, so a damaged download shows up.
    The checksum sits next to the APK, so it only catches a damaged download. To check that the APK
    is really signed by subshell, compare its signing certificate with this SHA-256 fingerprint:
@@ -212,14 +212,14 @@ Settings › Updates downloads the release APK from GitHub, checks it against th
 published SHA-256 and hands it to Android, which asks you before it installs.
 
 <!-- RELEASETOOL02_WHATS_NEW_START -->
-## What's new in 1.0.2
+## What's new in 1.0.3
 
-Steadier comment threads, cleaner links and new defaults
+A copy sheet, your own start feed, a steadier Inbox and better moderator tools
 
-- Comment threads no longer jump while replies load. The comment you are reading stays where it is, also when you scroll up from an Inbox reply.
-- A thread opens where you left it, also after Android has closed the app in the background.
-- Replies load sooner and in fewer steps, and the loading row no longer flashes on screen.
-- Clean links: tracking parameters (utm_, fbclid and many more) are removed when you open a link. On by default; turn it off in Settings > Media & links.
+- Reading: one "Copy…" entry on posts and comments opens a sheet to copy the text, select part of it, copy the link, or pick any link in the text.
+- Reading: choose your start feed (Home, Popular or All) and the default sort for feeds and communities in Settings > Feeds & content > Feeds.
+- Reading: links to replies deep down a long thread open at the reply, and a post opened from a link comes back after Android has closed the app.
+- Inbox: a chat text sent right after an image stays in the same row, image messages read as text, and the Inbox keeps its place and selection for each account.
 
 [All release notes](https://brealorg.github.io/subshell/changelog/)
 <!-- RELEASETOOL02_WHATS_NEW_END -->
