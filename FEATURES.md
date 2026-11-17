@@ -38,7 +38,7 @@ New here? The [README](README.md) has the short version.
 - **Paste a Reddit link** to open it in the app. Links to reddit.com and redd.it open in the app: posts, comments, communities, users, searches, wiki pages and custom feeds.
 - **Saved searches:** up to 50 per account (off).
 - **Language filter** for search and discovery: results in languages you did not pick are hidden, decided on the device (Android 10+, off).
-- **Communities:** join, leave, favourite; About, rules, moderators and a read-only wiki; your own flair; quarantined communities you can opt in to.
+- **Communities:** join, leave, favourite; About, rules, moderators and a read-only wiki (a page only in Reddit's new Wiki opens on reddit.com; config pages read as text); your own flair; quarantined communities you can opt in to.
 - **Profiles** with posts and comments; block and unblock. Your own library: saved, upvoted, downvoted, hidden, drafts.
 
 ## Photos and video
