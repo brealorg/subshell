@@ -15,7 +15,7 @@ New here? The [README](README.md) has the short version.
 - **Unread markers** on posts you have not opened. Hide posts you have read, or forget what counts as read.
 - **Pinned posts** as cards or a compact row. A row saying how many posts your filters hid, with a way to show them (off). A scroll indicator on feeds and threads (off).
 - **Save for offline:** the top 50 posts of your feed with their comment threads and images. Not video.
-- **Swipe actions** on posts and comments: upvote, downvote, save, hide or nothing, per direction (off).
+- **Swipe actions** on posts and comments: upvote, downvote, save, hide or nothing, per direction (off). The action runs when you let go; pick a swipe distance and try it on a card in Settings › Navigation & gestures.
 - **Flair:** tap a post's flair to search that flair in the community, newest first.
 - **Long web addresses are shown short** in posts, comments and on a link post's card (host and the start of the path), and a long press on a link gives Share, Copy, Open in browser and Copy original link. The post keeps the whole address.
 - **Copy…** in a post's or comment's menu: copy the text, select part of it, copy the Reddit link, or pick one of the web links in it.
@@ -38,7 +38,7 @@ New here? The [README](README.md) has the short version.
 - **Paste a Reddit link** to open it in the app. Links to reddit.com and redd.it open in the app: posts, comments, communities, users, searches, wiki pages and custom feeds.
 - **Saved searches:** up to 50 per account (off).
 - **Language filter** for search and discovery: results in languages you did not pick are hidden, decided on the device (Android 10+, off).
-- **Communities:** join, leave, favourite; About, rules, moderators and a read-only wiki (a page only in Reddit's new Wiki opens on reddit.com; config pages read as text); your own flair; quarantined communities you can opt in to.
+- **Communities:** join, leave, favourite; About, rules, moderators and a read-only wiki (pages show when they were last edited; a page only in Reddit's new Wiki opens on reddit.com; config pages read as text); your own flair; quarantined communities you can opt in to.
 - **Profiles** with posts and comments; block and unblock. Your own library: saved, upvoted, downvoted, hidden, drafts.
 
 ## Photos and video
@@ -53,7 +53,7 @@ New here? The [README](README.md) has the short version.
 
 ## Write
 
-- **Post composer** for text, link and media (up to 20 images) with community picker, flair, title, formatting toolbar and preview. It checks the community's posting requirements before you send.
+- **Post composer** for text, link and media (up to 20 images) with community picker, flair, title, formatting toolbar and preview. It checks the community's posting requirements before you send and shows them on the field they apply to; when Reddit refuses a post or comment, it says why in Reddit's own words.
 - **Comment composer** with image and GIF where the community allows them. Reply, edit and delete your own comments; edit, manage (flair, NSFW, spoiler) and delete your own posts.
 - **Drafts** for posts and replies. **Crosspost.** **Mention suggestions:** typing `@` or `u/` suggests people from the thread first.
 - **Private notes** on usernames: a colour label and a note, never sent to Reddit.
