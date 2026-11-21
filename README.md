@@ -3,7 +3,7 @@
 **An independent Android client for Reddit**, for people who read and moderate a lot.
 No ads, no analytics, no tracking.
 
-**[Download Subshell 1.0.5](https://github.com/brealorg/subshell/releases/tag/v1.0.5)** ·
+**[Download Subshell 1.0.6](https://github.com/brealorg/subshell/releases/tag/v1.0.6)** ·
 [Get started](https://brealorg.github.io/subshell/get-started/) ·
 [Add to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22io.github.brealorg.subshell%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fbrealorg%2Fsubshell%22%2C%22author%22%3A%22brealorg%22%2C%22name%22%3A%22subshell%22%2C%22additionalSettings%22%3A%22%7B%5C%22includePrereleases%5C%22%3Afalse%7D%22%7D) ·
 [Website](https://brealorg.github.io/subshell/) ·
@@ -194,7 +194,7 @@ Open a group to see every feature in it. **(off)** means it is off until you tur
 
 ## Get started
 
-1. **Install the APK.** Download the signed APK from [GitHub Releases](https://github.com/brealorg/subshell/releases/tag/v1.0.5).
+1. **Install the APK.** Download the signed APK from [GitHub Releases](https://github.com/brealorg/subshell/releases/tag/v1.0.6).
    Each release has a `.sha256` checksum and a release record, so a damaged download shows up.
    The checksum sits next to the APK, so it only catches a damaged download. To check that the APK
    is really signed by subshell, compare its signing certificate with this SHA-256 fingerprint:
@@ -212,14 +212,14 @@ Settings › Updates downloads the release APK from GitHub, checks it against th
 published SHA-256 and hands it to Android, which asks you before it installs.
 
 <!-- RELEASETOOL02_WHATS_NEW_START -->
-## What's new in 1.0.5
+## What's new in 1.0.6
 
-Swipes that act when you let go, and Reddit's own reasons when a post is refused
+Swipes that glide back after a vote, and comment pictures that can wait for Wi-Fi
 
-- Swipes: a vote or other swipe action now runs the moment you let go, and the post or comment springs straight back instead of sliding off the screen.
-- Swipes: pick a swipe distance in Settings › Navigation & gestures and try it on a card there. Standard is a little longer than before; Short is the old distance.
-- Posting: when Reddit refuses a post or comment, the notice says why in Reddit's own words, for example a community's minimum length, and scrolls into view.
-- Posting: a community's own posting rules, such as a word the title must contain, are shown on the field they apply to.
+- Swipes: after a vote the post or comment glides straight back instead of pausing and then jumping, and past halfway it follows your finger to the edge.
+- Comments: choose when pictures and GIFs in comments load, in Settings › Media & links: always, only on Wi-Fi, or when you tap them.
+- Feeds: a post whose picture details came back from Reddit in an unexpected shape is shown instead of being left out.
+- Behind the scenes: a newer Android build plugin (9.5.2).
 
 [All release notes](https://brealorg.github.io/subshell/changelog/)
 <!-- RELEASETOOL02_WHATS_NEW_END -->
