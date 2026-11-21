@@ -71,7 +71,7 @@ Open a group to see every feature in it. **(off)** means it is off until you tur
 - **Jump** to the next or previous top-level comment (off).
 - **Comment sort:** Best, Top, New, Controversial, Old. Reddit's suggested sort is used for you.
 - **Collapse** a comment by tapping it or its header. Collapse long post text (off).
-- **Comments show** avatars, code blocks with a copy button, spoilers, and inline images and GIFs. Choice of three code fonts.
+- **Comments show** avatars, code blocks with a copy button, spoilers, and inline images and GIFs, which can load always, only on Wi-Fi or when you tap them (Settings › Media & links). Choice of three code fonts.
 - **Jump to a comment** from a link, a notification or a comment you just wrote.
 
 </details>
