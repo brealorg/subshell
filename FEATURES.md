@@ -1,7 +1,7 @@
 # What subshell does
 
 The complete list, ordered by what you do. Checked against the code on `main` (2026-11-10).
-**(off)** means it is off until you turn it on in Settings. Settings paths are written as Settings › Area › Setting.
+**(off)** means it is off until you turn it on in Settings. **(next release)** means it is in the code on `main` but not in the published version yet. Settings paths are written as Settings › Area › Setting.
 
 New here? The [README](README.md) has the short version.
 
@@ -45,7 +45,8 @@ New here? The [README](README.md) has the short version.
 
 - **Galleries** and a **full-screen viewer** with zoom, share and save to Downloads. Captions as overlay, below or hidden.
 - **Reddit video:** one plays at a time in the feed. Quality limit per network (High on Wi-Fi and Medium on mobile data by default), subtitles, audio language. Videos start muted. Autoplay Always, Wi-Fi only or Never.
-- **Optional video controls (all off):** playback speed, double-tap to skip, hold for 2x, pinch to zoom, picture-in-picture, rotate for wide videos, technical details.
+- **Playback speed** in every video, from the full-screen speed button or the playback options; no setting needed. (next release)
+- **Optional video controls (all off):** playback speed (until the next release), double-tap to skip, hold for 2x, pinch to zoom, picture-in-picture, rotate for wide videos, technical details.
 - **Landscape full screen:** swipe the left half for brightness and the right half for volume.
 - **Sensitive media** is blurred by default; choose load on tap or hide. NSFW media only plays automatically if you turn that on.
 - **RedGIFs** clips in NSFW posts play in the app.
@@ -70,7 +71,7 @@ New here? The [README](README.md) has the short version.
 
 - **Inbox:** replies, mentions, private messages, Reddit notices and, for moderators, Mod. Mark read, dismiss, select.
 - **Notifications** per type: replies, mentions, private messages, Reddit notices, Modmail. Messages arrive as conversations and can be answered from the notification.
-- **New-post notifications** for up to ten communities you watch, and optionally each new comment.
+- **New-post notifications** for up to ten communities you watch, and optionally each new comment. Each one says what arrived and where ("New post in r/name") and shows the community's icon, except for NSFW posts and hidden content. (next release)
 - **Direct Chat** and private messages: text, images and GIFs, reactions, typing indicator, delete your own.
 - **Widgets** for the Inbox and for posts from Home or a community. **Launcher shortcuts** for communities (off).
 
