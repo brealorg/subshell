@@ -44,7 +44,8 @@ New here? The [README](README.md) has the short version.
 ## Photos and video
 
 - **Galleries** and a **full-screen viewer** with zoom, share and save to Downloads. Captions as overlay, below or hidden.
-- **Lighter feed pictures:** cards, gallery tiles and thumbnails load the copy Reddit has scaled for your screen instead of the full-size original; the full-screen viewer, share and save still use the original, and Save for offline stores the feed copy. (next release)
+- **Lighter feed pictures:** cards and gallery tiles load the copy Reddit has scaled for your screen instead of the full-size original; the full-screen viewer, share and save still use the original, and Save for offline stores the feed copy. (next release)
+- **Small pictures stay small:** tiles in the List, Compact and Grid layouts load the smallest copy Reddit offers that fills the tile, and are decoded to that size, so each picture uses less memory and usually less data. (next release)
 - **Pictures kept on the phone:** pictures you have seen are kept in a cache of up to 512 MB, so reopening the app does not download them again; Settings › Media & links › Media cache shows the size and clears it with the video cache. (next release)
 - **Reddit video:** one plays at a time in the feed. Quality limit per network (High on Wi-Fi and Medium on mobile data by default), subtitles, audio language. Videos start muted. Autoplay Always, Wi-Fi only or Never.
 - **Playback speed** in every video, from the full-screen speed button or the playback options; no setting needed. (next release)
