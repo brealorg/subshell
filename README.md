@@ -58,7 +58,7 @@ Open a group to see every feature in it. **(off)** means it is off until you tur
 - **Flair:** tap a post's flair to search that flair in the community, newest first.
 - **Long web addresses are shown short** in posts, comments and on a link post's card (host and the start of the path), and a long press on a link gives Share, Copy, Open in browser and Copy original link. The post keeps the whole address.
 - **Copy…** in a post's or comment's menu: copy the text, select part of it, copy the Reddit link, or pick one of the web links in it.
-- **Random NSFW community,** placed where you choose (off).
+- **Random NSFW community,** placed where you choose (off). (next release: it becomes **Random community**, with Random NSFW beside it while NSFW posts show; both draw from all of Reddit, small communities too, skip your latest picks and communities with no posts in a month, and **Another one** draws again in its place.)
 
 </details>
 
