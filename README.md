@@ -141,6 +141,7 @@ Open a group to see every feature in it. **(off)** means it is off until you tur
 <summary><strong>Control what you see</strong></summary>
 
 - **Content filters:** words, communities, users, domains and flair, everywhere or in one community. Nothing changes on Reddit.
+- **Topic filter:** hide communities in Popular and All that say they are about a word you choose (in their title, description or name), with a preview of what it would hide. Communities you joined, and any you mark "Don't hide", stay. Settings › Feeds & content › Content filters › Topics. (next release)
 - **Mute a community** for an hour, a day, a week, until a date or for good. Choose whether a direct visit shows posts or only About.
 - **Hide a joined community** from your list without leaving it. Optionally require device unlock before hidden communities show.
 - **NSFW** posts and media are off until you turn them on.
