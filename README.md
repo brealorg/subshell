@@ -85,6 +85,7 @@ Open a group to see every feature in it. **(off)** means it is off until you tur
 - **Language filter** for search and discovery: results in languages you did not pick are hidden, decided on the device (Android 10+, off).
 - **Communities:** join, leave, favourite; About, rules, moderators and a read-only wiki (pages show when they were last edited; a page only in Reddit's new Wiki opens on reddit.com; config pages read as text); your own flair; quarantined communities you can opt in to.
 - **Profiles** with posts and comments; block and unblock. Your own library: saved, upvoted, downvoted, hidden, drafts.
+- **Follow, message and share from a profile:** one Follow button opens Follow, Message, Block and Share; Follow uses Reddit's own follow, and the people you follow are listed under You › Library › Following. (next release)
 
 </details>
 
