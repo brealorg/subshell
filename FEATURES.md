@@ -92,6 +92,7 @@ New here? The [README](README.md) has the short version.
 ## Look and feel
 
 - Light, dark or system theme, dynamic colour (Android 12+), pure black. UI size 85 to 110 % and text size 85 to 130 %. Vote buttons as thumbs or arrows, with vote colours.
+- **Theme & colours:** wallpaper colours or one of nine basic colours, each in five styles (Tonal spot, Neutral, Vibrant, Expressive, Monochrome), with contrast at Standard, Medium or High or following Android. Subshell's own orange stays as it was. Settings › Appearance › Theme & colours. (next release)
 - Left- or right-handed controls and side menu. Top and bottom bars that hide on scroll. Navigation labels. Communities written as r/name, /r/name or name.
 - Tablets and foldables: navigation rail, list and detail side by side, tabletop posture for video.
 - Reduce motion, TalkBack actions on feed cards, 48 dp touch targets.
