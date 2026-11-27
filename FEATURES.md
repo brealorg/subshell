@@ -76,6 +76,7 @@ New here? The [README](README.md) has the short version.
 - **Inbox:** replies, mentions, private messages, Reddit notices and, for moderators, Mod. Mark read, dismiss, select.
 - **Notifications** per type: replies, mentions, private messages, Reddit notices, Modmail. Messages arrive as conversations and can be answered from the notification.
 - **New-post notifications** for up to ten communities you watch, and optionally each new comment. Each one says what arrived and where ("New post in r/name") and shows the community's icon, except for NSFW posts and hidden content. (next release)
+- **What watched communities brought** is listed in Inbox › Activity, one row per community and check ("5 new posts in r/name"), so nothing is lost when a notification is swiped away; it works with notifications turned off too, and what you read stays on the phone. (next release)
 - **Direct Chat** and private messages: text, images and GIFs, reactions, typing indicator, delete your own.
 - **Widgets** for the Inbox and for posts from Home or a community. **Launcher shortcuts** for communities (off).
 
