@@ -58,7 +58,7 @@ Open a group to see every feature in it. **(off)** means it is off until you tur
 - **Flair:** tap a post's flair to search that flair in the community, newest first.
 - **Long web addresses are shown short** in posts, comments and on a link post's card (host and the start of the path), and a long press on a link gives Share, Copy, Open in browser and Copy original link. The post keeps the whole address.
 - **Copy…** in a post's or comment's menu: copy the text, select part of it, copy the Reddit link, or pick one of the web links in it.
-- **Random NSFW community,** placed where you choose (off). (next release: it becomes **Random community**, with Random NSFW beside it while NSFW posts show; both draw from all of Reddit, small communities too, skip your latest picks and communities with no posts in a month, and **Another one** draws again in its place.)
+- **Random community,** placed where you choose (off), with Random NSFW beside it while NSFW posts show; both draw from all of Reddit, small communities too, skip your latest picks and communities with no posts in a month, and **Another one** draws again in its place.
 
 </details>
 
@@ -85,7 +85,7 @@ Open a group to see every feature in it. **(off)** means it is off until you tur
 - **Language filter** for search and discovery: results in languages you did not pick are hidden, decided on the device (Android 10+, off).
 - **Communities:** join, leave, favourite; About, rules, moderators and a read-only wiki (pages show when they were last edited; a page only in Reddit's new Wiki opens on reddit.com; config pages read as text); your own flair; quarantined communities you can opt in to.
 - **Profiles** with posts and comments; block and unblock. Your own library: saved, upvoted, downvoted, hidden, drafts.
-- **Follow, message and share from a profile:** one Follow button opens Follow, Message, Block and Share; Follow uses Reddit's own follow, and the people you follow are listed under You › Library › Following. (next release)
+- **Follow, message and share from a profile:** one Follow button opens Follow, Message, Block and Share; Follow uses Reddit's own follow, and the people you follow are listed under You › Library › Following.
 
 </details>
 
@@ -93,12 +93,12 @@ Open a group to see every feature in it. **(off)** means it is off until you tur
 <summary><strong>Photos and video</strong></summary>
 
 - **Galleries** and a **full-screen viewer** with zoom, share and save to Downloads. Captions as overlay, below or hidden.
-- **Lighter feed pictures:** cards and gallery tiles load the copy Reddit has scaled for your screen instead of the full-size original; the full-screen viewer, share and save still use the original, and Save for offline stores the feed copy. (next release)
-- **Small pictures stay small:** tiles in the List, Compact and Grid layouts load the smallest copy Reddit offers that fills the tile, and are decoded to that size, so each picture uses less memory and usually less data. (next release)
-- **Pictures kept on the phone:** pictures you have seen are kept in a cache of up to 512 MB, so reopening the app does not download them again; Settings › Media & links › Media cache shows the size and clears it with the video cache. (next release)
+- **Lighter feed pictures:** cards and gallery tiles load the copy Reddit has scaled for your screen instead of the full-size original; the full-screen viewer, share and save still use the original, and Save for offline stores the feed copy.
+- **Small pictures stay small:** tiles in the List, Compact and Grid layouts load the smallest copy Reddit offers that fills the tile, and are decoded to that size, so each picture uses less memory and usually less data.
+- **Pictures kept on the phone:** pictures you have seen are kept in a cache of up to 512 MB, so reopening the app does not download them again; Settings › Media & links › Media cache shows the size and clears it with the video cache.
 - **Reddit video:** one plays at a time in the feed. Quality limit per network (High on Wi-Fi and Medium on mobile data by default), subtitles, audio language. Videos start muted. Autoplay Always, Wi-Fi only or Never.
-- **Playback speed** in every video, from the full-screen speed button or the playback options; no setting needed. (next release)
-- **Optional video controls (all off):** playback speed (until the next release), double-tap to skip, hold for 2x, pinch to zoom, picture-in-picture, rotate for wide videos, technical details.
+- **Playback speed** in every video, from the full-screen speed button or the playback options; no setting needed.
+- **Optional video controls (all off):** double-tap to skip, hold for 2x, pinch to zoom, picture-in-picture, rotate for wide videos, technical details.
 - **Landscape full screen:** swipe the left half for brightness and the right half for volume.
 - **Sensitive media** is blurred by default; choose load on tap or hide. NSFW media only plays automatically if you turn that on.
 - **RedGIFs** clips in NSFW posts play in the app.
@@ -132,8 +132,8 @@ Open a group to see every feature in it. **(off)** means it is off until you tur
 
 - **Inbox:** replies, mentions, private messages, Reddit notices and, for moderators, Mod. Mark read, dismiss, select.
 - **Notifications** per type: replies, mentions, private messages, Reddit notices, Modmail. Messages arrive as conversations and can be answered from the notification.
-- **New-post notifications** for up to ten communities you watch, and optionally each new comment. Each one says what arrived and where ("New post in r/name") and shows the community's icon, except for NSFW posts and hidden content. (next release)
-- **What watched communities brought** is listed in Inbox › Activity, one row per community and check ("5 new posts in r/name"), so nothing is lost when a notification is swiped away; it works with notifications turned off too, and what you read stays on the phone. (next release)
+- **New-post notifications** for up to ten communities you watch, and optionally each new comment. Each one says what arrived and where ("New post in r/name") and shows the community's icon, except for NSFW posts and hidden content.
+- **What watched communities brought** is listed in Inbox › Activity, one row per community and check ("5 new posts in r/name"), so nothing is lost when a notification is swiped away; it works with notifications turned off too, and what you read stays on the phone.
 - **Direct Chat** and private messages: text, images and GIFs, reactions, typing indicator, delete your own.
 - **Widgets** for the Inbox and for posts from Home or a community. **Launcher shortcuts** for communities (off).
 
@@ -143,7 +143,7 @@ Open a group to see every feature in it. **(off)** means it is off until you tur
 <summary><strong>Control what you see</strong></summary>
 
 - **Content filters:** words, communities, users, domains and flair, everywhere or in one community. Nothing changes on Reddit.
-- **Topic filter:** hide communities in Popular and All that say they are about a word you choose (in their title, description or name), with a preview of what it would hide. Communities you joined, and any you mark "Don't hide", stay. Settings › Feeds & content › Content filters › Topics. (next release)
+- **Topic filter:** hide communities in Popular and All that say they are about a word you choose (in their title, description or name), with a preview of what it would hide. Communities you joined, and any you mark "Don't hide", stay. Settings › Feeds & content › Content filters › Topics.
 - **Mute a community** for an hour, a day, a week, until a date or for good. Choose whether a direct visit shows posts or only About.
 - **Hide a joined community** from your list without leaving it. Optionally require device unlock before hidden communities show.
 - **NSFW** posts and media are off until you turn them on.
@@ -155,7 +155,7 @@ Open a group to see every feature in it. **(off)** means it is off until you tur
 <summary><strong>Look and feel</strong></summary>
 
 - Light, dark or system theme, dynamic colour (Android 12+), pure black. UI size 85 to 110 % and text size 85 to 130 %. Vote buttons as thumbs or arrows, with vote colours.
-- **Theme & colours:** wallpaper colours or one of nine basic colours, each in five styles (Tonal spot, Neutral, Vibrant, Expressive, Monochrome), with contrast at Standard, Medium or High or following Android. Subshell's own orange stays as it was. Settings › Appearance › Theme & colours. (next release)
+- **Theme & colours:** wallpaper colours or one of nine basic colours, each in five styles (Tonal spot, Neutral, Vibrant, Expressive, Monochrome), with contrast at Standard, Medium or High or following Android. Subshell's own orange stays as it was. Settings › Appearance › Theme & colours.
 - Left- or right-handed controls and side menu. Top and bottom bars that hide on scroll. Navigation labels. Communities written as r/name, /r/name or name.
 - Tablets and foldables: navigation rail, list and detail side by side, tabletop posture for video.
 - Reduce motion, TalkBack actions on feed cards, 48 dp touch targets.
@@ -171,7 +171,8 @@ Open a group to see every feature in it. **(off)** means it is off until you tur
 - **What is about you is stored encrypted** with a key in the Android Keystore: your inbox, your joined-community list, your saved, upvoted, downvoted and hidden lists, your reading counts, the communities you hide or mute, your private notes on users, your saved searches, your post drafts, your saved moderator responses, your search history and favourites, and the home and saved feeds you have loaded. Posts and comments from public feeds are not. This keeps the files unreadable to anything that copies them off the phone without the key; it does not protect against someone using your unlocked phone.
 - **App lock** with biometrics or screen lock (off). Notifications can hide their content while it is on.
 - **Your reading** (off): counts of opens and time per community, kept on the device only, with suggestions to hide or leave communities you never open.
-- **Backup** your settings to a folder you choose. Hidden and muted communities, drafts, saved moderator responses and private notes are included only if you say so.
+- **Backup** your settings to a folder you choose. Hidden and muted communities, drafts, saved moderator responses and private notes are included only if you say so. A folder that already holds another phone's backup offers to review and restore it, and Google Drive, Nextcloud and Syncthing folders are named.
+- **Phones that keep in step:** with a backup folder they share (for example through Google Drive, Nextcloud or Syncthing), Settings › Backup & restore › Keep these devices in step keeps hidden and muted communities, favourite communities and custom feeds, new-post notifications, private notes, saved searches and saved moderator responses the same on each phone (off).
 - **Export your Reddit data** (saved, votes, posts, comments, communities, messages and more) as JSON and CSV in one ZIP.
 - **Several accounts,** switched from the bottom bar. Everything account-specific is kept per account.
 - **Open source,** GPL-3.0-or-later.
